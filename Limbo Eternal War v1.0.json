@@ -1,0 +1,1672 @@
+{
+  "gameSystem": {
+    "name": "Limbo: Eternal War v1.0",
+    "id": "9eae-0060-d2cb-2349",
+    "battleScribeVersion": 2.03,
+    "revision": 3,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Lord", "id": "03b7-6aa9-a03b-8071", "hidden": false},
+      {"name": "Hero", "id": "92b2-75fa-5ad7-dc75", "hidden": false},
+      {"name": "Troop", "id": "9d34-3652-fcc5-0fa3", "hidden": false},
+      {"name": "Fate Cards", "id": "41ed-e3d0-2adf-5513", "hidden": false},
+      {"name": "Divinity", "id": "6c59-7bcd-44f8-3c71", "hidden": false},
+      {"name": "Upgrades", "id": "6173-1a99-a86b-6e28", "hidden": false},
+      {"name": "Keywords", "id": "e900-5d11-8941-29a8", "hidden": false}
+    ],
+    "costTypes": [
+      {"name": "Fate", "id": "7540-583a-760c-a57d", "defaultCostLimit": -1, "hidden": false},
+      {"name": "Cost", "id": "c494-d0ff-a958-c070", "defaultCostLimit": -1, "hidden": false}
+    ],
+    "forceEntries": [
+      {
+        "name": "Army",
+        "id": "529d-78e8-6ab8-f447",
+        "hidden": false,
+        "categoryLinks": [
+          {"name": "Lord", "id": "ee68-c5e4-989f-af6e", "hidden": false, "primary": false, "targetId": "03b7-6aa9-a03b-8071"},
+          {"name": "Hero", "id": "968c-0ddb-8f9c-25e5", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"},
+          {"name": "Troop", "id": "09d9-6e1d-5127-8150", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"},
+          {"name": "Fate Cards", "id": "7914-f32a-57d0-0f3a", "hidden": false, "primary": false, "targetId": "41ed-e3d0-2adf-5513"},
+          {"name": "Divinity", "id": "2326-2c65-1f12-27ab", "hidden": false, "primary": false, "targetId": "6c59-7bcd-44f8-3c71"},
+          {"name": "Upgrades", "id": "105b-8206-3ac4-bc1b", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Lord",
+        "id": "b0b7-02f8-2474-26f5",
+        "characteristicTypes": [
+          {"name": "Health", "id": "e6d2-e7ef-38c9-dd30"},
+          {"name": "Attack", "id": "914f-b956-277c-033e"},
+          {"name": "Range", "id": "0a3b-eed5-5248-6151"},
+          {"name": "Defense", "id": "8926-1576-44d8-b258"},
+          {"name": "Armour", "id": "0721-716e-2c6e-6ff5"},
+          {"name": "Speed", "id": "a34d-8e5f-d950-64f2"},
+          {"name": "Skill 1", "id": "1b0e-4759-ab75-9856"},
+          {"name": "Skill 2", "id": "66d2-fc17-f518-ed0d"},
+          {"name": "Skill 3", "id": "2e69-5be8-ce5e-d7a4"},
+          {"name": "Traits", "id": "ff57-cc56-85da-15f8"},
+          {"name": "Criticals", "id": "4f32-eb95-3813-58b4"},
+          {"name": "Token Skills", "id": "0b95-f7de-c5f1-7a10"},
+          {"name": "Keywords", "id": "d773-cf12-6468-01e2"}
+        ]
+      },
+      {"name": "Keywords", "id": "98d1-3158-638b-eec0", "characteristicTypes": [{"name": "Definition", "id": "0478-03b2-1b07-ab49"}]},
+      {
+        "name": "Hero",
+        "id": "3ae3-9405-766b-6417",
+        "characteristicTypes": [
+          {"name": "Health", "id": "a13c-10b7-2896-bb31"},
+          {"name": "Attack", "id": "6c2e-f536-b3a6-1fa9"},
+          {"name": "Range", "id": "49d0-0a04-6cbc-f286"},
+          {"name": "Defense", "id": "3a86-11ca-f002-eeb7"},
+          {"name": "Armour", "id": "462e-16c7-c53f-a16b"},
+          {"name": "Speed", "id": "028d-f362-815c-38f0"},
+          {"name": "Skill 1", "id": "4b76-bce7-94ec-53ff"},
+          {"name": "Skill 2", "id": "403a-8e7a-a3b3-57db"},
+          {"name": "Skill 3", "id": "cf14-caf6-b618-436c"},
+          {"name": "Traits", "id": "4ccc-8757-1b3b-3c31"},
+          {"name": "Criticals", "id": "ef0e-8242-f583-664e"},
+          {"name": "Token Skills", "id": "80f8-014e-3c19-66d6"},
+          {"name": "Keywords", "id": "c0b7-ff64-68c6-0bcc"}
+        ]
+      },
+      {"name": "Upgrades", "id": "d1cc-a949-f368-676a", "characteristicTypes": [{"name": "Description", "id": "a561-1679-2610-14db"}]},
+      {
+        "name": "Troop",
+        "id": "67ed-66d0-e4ae-8ccc",
+        "characteristicTypes": [
+          {"name": "Health", "id": "0aff-3d11-f241-82a0"},
+          {"name": "Attack", "id": "67da-6694-0f94-47c5"},
+          {"name": "Range", "id": "b4f1-ad98-8eb1-e25d"},
+          {"name": "Defense", "id": "5dba-13c9-182c-c04c"},
+          {"name": "Armour", "id": "11f5-dd18-2756-6e91"},
+          {"name": "Speed", "id": "5fba-4ecc-4581-be8e"},
+          {"name": "Skill 1", "id": "89e2-1316-b1f4-737b"},
+          {"name": "Skill 2", "id": "6008-87fa-4c1a-6cee"},
+          {"name": "Traits", "id": "a185-ee4a-642e-37d2"},
+          {"name": "Criticals", "id": "9ef8-76bb-c4cc-3a78"},
+          {"name": "VP Track", "id": "a0b2-ad1b-7f1e-f32c"},
+          {"name": "Keywords", "id": "c4f7-494f-7643-7638"},
+          {"name": "Token Skills", "id": "9cac-1866-e02e-1d1d"}
+        ]
+      },
+      {"name": "Divinity", "id": "4749-13d1-b453-9fe0", "characteristicTypes": [{"name": "Description", "id": "f35f-2821-9d15-e0d5"}]},
+      {"name": "Token Skills", "id": "7afc-a115-1d84-2d4e", "characteristicTypes": [{"name": "Description", "id": "417d-1819-d18c-79ef"}]}
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Huge",
+        "id": "8d72-6a5d-8cf4-4175",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Huge Represents a character's sheer size. Characters with Huge ignore small characters as well as difficult terrain while moving. When determining LOS Huge characters act as Blocking terrain. Huge characters reduce all Push and Pull values affecting them by 2.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Deadly",
+        "id": "77f1-e026-5e80-d9b3",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Deadly represents a character's extremely dangerous attack. Characters with Deadly tend to have below average Attack stats. However, while attacking, characters with Deadly multiply their Damage Totals by their Deadly Value (After all other modifiers, such as Shield tokens). If a character with a Stun. So if a character with Deadly 2 scores 3 Damage total, they'll place 6 damage onto their target.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Accuracy",
+        "id": "4cd1-8f1e-4e7f-c438",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Accuracy represents a character being particular skilled at aiming for weak spots on the enemy. When a character with Accuracy is attacking, add their Accuracy Value to the Attack Total",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Evasive",
+        "id": "65a9-7bcc-1f37-a154",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Evasive represents a character's ability to avoid taking damage. When a character with Evasive is defending, subtract their evasive value from the Attack Total. Note that a character with a Stun Token is treated as though they have Evasive 0.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Fly",
+        "id": "9a8b-17cc-2d65-127c",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Fly is a skill found on characters with wings or other ways of Floating. When a character uses the Fly skill, for the remainder of the current activation, they ignore all characters and terrain while moving. Additionally, characters cannot make Attacks of Opportunity during the movement.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Displacement",
+        "id": "d54c-2f95-73c9-c8d7",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Huge characters are able to end their movement in spaces containig small characters. When they do so, those characters in those squares are displaced.  The player who doesn't control the Huge character places each displaced character, one at a time and in the order of their choosing, into the closest unoccupied spaces to the Huge character. This means that the displaced character may actually end up in spaces no adjacent to the Huge character.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Immune",
+        "id": "72cb-c4cb-c3ec-44a9",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Characters with Immune aren't susceptible to many of the conditions that would normally affect characters. Characters with Immune cannot recieves Banes for any reason. Additionally, characters with Immune cannot be flanked.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Limited Range",
+        "id": "f54a-a791-92f9-fd2e",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "A character with Limited Range can make ranged attacks, but these attacks cannot extend beyond their range. This represents a ranged weapon that had finite range (e.g. Gouge's Infernal Hook)",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Pierce",
+        "id": "88cb-8ccd-853d-60de",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Pierce represents weapons that are particulary effective at breaking through armour. While a character with Pierce is attacking, reduce the defending character's Armour by the attacking character's Pierce value. Note that this cannot take Armour to below 0.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Pull",
+        "id": "3fa0-0275-290e-24e5",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Pull drags characters towards the character using the Keyword. When a character pulls a target, the player who controls the pulling character moves the target a number of spaces equal to the pull value. Each space must decrease the range between the target and the pulling character.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Push",
+        "id": "bacd-6ef7-78ba-c168",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Push forces characters away from the character using the Keyword. When a character pushes a target, the player who controls the pushing character moves the target a number of spaces equal to the push value. ach space must increase the range between the target and the pulling character.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Reach",
+        "id": "74fe-9946-0b8d-564d",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Reach represents characters with longer weapons, or other methods to attack characters further away. Characters with Reach threaten all spaces with X (X= Reach value) instead of just adjacent characters.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Recover",
+        "id": "930c-1186-6cde-120c",
+        "hidden": false,
+        "typeId": "98d1-3158-638b-eec0",
+        "typeName": "Keywords",
+        "characteristics": [
+          {
+            "name": "Definition",
+            "$text": "Recover represents all manner of healing or regeneration. When a character Recovers, roll a number of dice equal to recover value. Add up the results, then divide the total by the recovering characters defense, round down the result. Remove that much damage from the recovering character.",
+            "typeId": "0478-03b2-1b07-ab49"
+          }
+        ]
+      },
+      {
+        "name": "Adamantium Augment",
+        "id": "1669-516a-0bef-7cc3",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [{"name": "Description", "$text": "This character or group gains Pierce 2 during Melee attacks.", "typeId": "a561-1679-2610-14db"}]
+      },
+      {
+        "name": "Battle Hardened",
+        "id": "3224-1cb6-109d-67e2",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [{"name": "Description", "$text": "This character or group gets +X Health and Accuracy X. X = character's group or rank", "typeId": "a561-1679-2610-14db"}]
+      },
+      {
+        "name": "Disciplined",
+        "id": "64c7-7a08-dcf4-a276",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "After this character or group is the target of the Command skill, Active this character or group",
+            "typeId": "a561-1679-2610-14db"
+          }
+        ]
+      },
+      {
+        "name": "Embracing Unlife",
+        "id": "13cc-2353-c7de-8e46",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [{"name": "Description", "$text": "This character or group gains the Undead trait and Immune Keyword", "typeId": "a561-1679-2610-14db"}]
+      },
+      {
+        "name": "Favored One",
+        "id": "48bd-8855-8ec1-2771",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "Hero or Lord only. \n\nThis character gains the Holy trait.\n\nWhen this character activates, if you have fewer Fate in your pool than your opponent, shift one Fate to your pool.",
+            "typeId": "a561-1679-2610-14db"
+          }
+        ]
+      },
+      {
+        "name": "Heavy Plating",
+        "id": "5fc4-e32a-a6a4-2edb",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [{"name": "Description", "$text": "This character or group gains 1 Armour.", "typeId": "a561-1679-2610-14db"}]
+      },
+      {
+        "name": "Natural Leader",
+        "id": "87f7-1873-af57-09a2",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "Hero or Lord only. \n\nThis character gains the Leader trait and the Command skill. \n\nIf this character already had the Leader trait, treat their rank as one higher when using the Command skill.",
+            "typeId": "a561-1679-2610-14db"
+          }
+        ]
+      },
+      {
+        "name": "Survival Instincts",
+        "id": "20c1-ded0-3ac6-13ec",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "The character or group gains the Evade skill. If this character or group already has the Evade skill, they gain an additional Evasive 2 while they have an Evade token.",
+            "typeId": "a561-1679-2610-14db"
+          }
+        ]
+      },
+      {
+        "name": "Unlimited Power",
+        "id": "14dd-d41f-223b-5e96",
+        "hidden": false,
+        "typeId": "d1cc-a949-f368-676a",
+        "typeName": "Upgrades",
+        "characteristics": [
+          {
+            "name": "Description",
+            "$text": "This character gains the channel skill.\n\nIf this character already has the Channel skill, Fate abilities and cards used by this character cost 1 less to perform.",
+            "typeId": "a561-1679-2610-14db"
+          }
+        ]
+      },
+      {
+        "name": "Cegorach The Trickster",
+        "id": "b314-55fa-8cee-6e42",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Divight Fate Lord",
+        "id": "be09-522d-769b-c8d1",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Vorsheth Sire Of Pain",
+        "id": "f91c-b0d6-f35c-a4c1",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Taukmaw The Devourer",
+        "id": "f8d4-3780-2b08-ad2e",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Millard The Peacekeeper",
+        "id": "626e-618a-a79b-b378",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Foreire The Swift Breeze",
+        "id": "8001-55d8-f9c5-a1f8",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Ethel The Blind Justice",
+        "id": "956e-952d-bc1f-e9d4",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Ereshikigal The Reaper",
+        "id": "9dba-d1a2-173f-0bdb",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      },
+      {
+        "name": "Ashara The Glorious Sun",
+        "id": "6915-a3e6-9611-ac2a",
+        "hidden": false,
+        "typeId": "4749-13d1-b453-9fe0",
+        "typeName": "Divinity",
+        "characteristics": [{"name": "Description", "typeId": "f35f-2821-9d15-e0d5"}]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Accuracy",
+        "id": "562f-956a-3f73-3315",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "de30-34bc-e16a-2728", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Accuracy", "id": "9650-c96a-2c30-c426", "hidden": false, "targetId": "4cd1-8f1e-4e7f-c438", "type": "profile"}]
+      },
+      {
+        "name": "Deadly",
+        "id": "99c4-52ae-1957-53af",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Keywords", "id": "d78a-20ac-63e2-f811", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Deadly", "id": "c12f-6dc2-d864-7987", "hidden": false, "targetId": "77f1-e026-5e80-d9b3", "type": "profile"}]
+      },
+      {
+        "name": "Huge",
+        "id": "dd2a-4456-d8e2-ff50",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "3e91-d017-b948-4a0f", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Huge", "id": "718a-c2ee-1561-68cc", "hidden": false, "targetId": "8d72-6a5d-8cf4-4175", "type": "profile"}]
+      },
+      {
+        "name": "Evasive",
+        "id": "b56a-7809-551f-e525",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "2e34-6d77-76f1-e4e9", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Evasive", "id": "482c-5901-56c4-cf6c", "hidden": false, "targetId": "65a9-7bcc-1f37-a154", "type": "profile"}]
+      },
+      {
+        "name": "Fly",
+        "id": "1428-43b6-e9e3-6192",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "383e-d847-160e-01e1", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Fly", "id": "8c11-60a0-4a06-3257", "hidden": false, "targetId": "9a8b-17cc-2d65-127c", "type": "profile"}]
+      },
+      {
+        "name": "Immune",
+        "id": "51e5-651f-3875-8a2a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "d80d-353e-748a-202a", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Immune", "id": "6558-0400-9b71-72f1", "hidden": false, "targetId": "72cb-c4cb-c3ec-44a9", "type": "profile"}]
+      },
+      {
+        "name": "Limited Range",
+        "id": "1a0a-4273-c71f-a9f0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "d95e-5809-94c6-fad9", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Limited Range", "id": "6564-a3f9-596f-f7ae", "hidden": false, "targetId": "f54a-a791-92f9-fd2e", "type": "profile"}]
+      },
+      {
+        "name": "Pierce",
+        "id": "2f79-429e-97b0-691c",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "5832-b005-e04c-1ff8", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Pierce", "id": "6cd3-6aac-b59d-a3cb", "hidden": false, "targetId": "88cb-8ccd-853d-60de", "type": "profile"}]
+      },
+      {
+        "name": "Pull",
+        "id": "6aa8-8f2f-8e4f-d437",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Pull", "id": "64a6-3461-2cb8-a91f", "hidden": false, "targetId": "3fa0-0275-290e-24e5", "type": "profile"}]
+      },
+      {
+        "name": "Push",
+        "id": "d1ea-586b-586f-f3b8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "39be-4886-b912-00ec", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Push", "id": "2a3c-5b43-393d-c0ad", "hidden": false, "targetId": "bacd-6ef7-78ba-c168", "type": "profile"}]
+      },
+      {
+        "name": "Reach",
+        "id": "0a4b-ebe6-3bfb-c393",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "b84a-79a4-fd86-961a", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Reach", "id": "e9f6-e5ab-2585-c1e9", "hidden": false, "targetId": "74fe-9946-0b8d-564d", "type": "profile"}]
+      },
+      {
+        "name": "Recover",
+        "id": "4ae1-386c-6971-767a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "2297-d67f-4a09-2b8f", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "infoLinks": [{"name": "Recover", "id": "41ca-de97-4a77-2104", "hidden": false, "targetId": "930c-1186-6cde-120c", "type": "profile"}]
+      },
+      {
+        "name": "Adamantium Augment",
+        "id": "bcd2-52ee-4e32-b5c0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "76c3-735c-9a47-dbcb", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 2}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Adamantium Augment", "id": "86cc-1a78-0a1a-1551", "hidden": false, "targetId": "1669-516a-0bef-7cc3", "type": "profile"}]
+      },
+      {
+        "name": "Battle Hardened",
+        "id": "76a0-482b-e6a1-b488",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "2a15-4482-b025-7568", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Battle Hardened", "id": "641e-6e44-41a8-8fa0", "hidden": false, "targetId": "3224-1cb6-109d-67e2", "type": "profile"}]
+      },
+      {
+        "name": "Disciplined",
+        "id": "5c23-95ef-5eae-2f9d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "bc16-f543-a30d-aeff", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 2}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Disciplined", "id": "cbe3-c71b-dfcb-bb85", "hidden": false, "targetId": "64c7-7a08-dcf4-a276", "type": "profile"}]
+      },
+      {
+        "name": "Embracing Unlife",
+        "id": "f189-b818-378e-ce13",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "4420-1d23-e57a-3b71", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 2}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Embracing Unlife", "id": "c6fe-06d8-8218-f2ae", "hidden": false, "targetId": "13cc-2353-c7de-8e46", "type": "profile"}]
+      },
+      {
+        "name": "Favoured One",
+        "id": "ea93-ff21-964b-0d79",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "3a90-c10a-d85d-027b", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 1}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Favored One", "id": "9634-bf59-f99a-a22c", "hidden": false, "targetId": "48bd-8855-8ec1-2771", "type": "profile"}]
+      },
+      {
+        "name": "Heavy Plating",
+        "id": "15d1-21ed-8c0f-dbcb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "ef3e-59c6-afa2-4e5c", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 2}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Heavy Plating", "id": "b9f2-e751-5508-11a4", "hidden": false, "targetId": "5fc4-e32a-a6a4-2edb", "type": "profile"}]
+      },
+      {
+        "name": "Natural Leader",
+        "id": "36f7-d53c-4bba-74a9",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "3db4-dfff-6d36-3bc5", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 2}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Natural Leader", "id": "6606-5afc-4649-c76e", "hidden": false, "targetId": "87f7-1873-af57-09a2", "type": "profile"}]
+      },
+      {
+        "name": "Survival Instincts",
+        "id": "b529-8e60-fa40-47a5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "0c15-831d-32f1-ab68", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 1}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Survival Instincts", "id": "6d46-7cfa-e989-abc3", "hidden": false, "targetId": "20c1-ded0-3ac6-13ec", "type": "profile"}]
+      },
+      {
+        "name": "Unlimited Power",
+        "id": "f9ce-fd66-9dfe-3d1f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Upgrades", "id": "5270-9005-5b38-fcfd", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Unlimited Power", "id": "ae59-44c2-bdfb-5a11", "hidden": false, "targetId": "14dd-d41f-223b-5e96", "type": "profile"}]
+      },
+      {
+        "name": "Cegorach The Trickster",
+        "id": "61a8-9821-8c29-b1db",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [
+          {"name": "Divinity", "id": "e5b7-9dab-4017-d50d", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"},
+          {"name": "Divinity", "id": "988a-c6ab-4cf0-7392", "hidden": false, "primary": false, "targetId": "6c59-7bcd-44f8-3c71"}
+        ],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Cegorach The Trickster", "id": "803a-a1c4-6cf3-3230", "hidden": false, "targetId": "b314-55fa-8cee-6e42", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Cegorach The Trickster",
+            "id": "f082-a467-95da-bd91",
+            "description": "Your Opponent Plays with the top card of their deck revealed. (Constant)\n\n(1) Your opponent switches the top card of their deck with a card in their hand. (Active Ability)\n\nYou may activate Cegorach to play the top card of your opponent's deck as if it were in your hand, ignoring Trait requirements but paying all cost plus 1 Fate.",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Divight Fate Lord",
+        "id": "7cb3-ffd2-1bc5-934f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "fd0d-5e2f-7da2-8ee9", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Divight Fate Lord", "id": "fa2b-4252-e0af-c893", "hidden": false, "targetId": "be09-522d-769b-c8d1", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Divight Fate Lord",
+            "id": "deed-f3ec-e2d6-d5f5",
+            "description": "You are considered to have one additional Fate in your pool when scoring for Fate during the Objective Phase. (Constant)\n\nAt the start of the Activation Phase, add 1 Fate Crystal to a character of your choice. (Reaction)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Vorsheth Sire Of Pain",
+        "id": "ba8d-d307-b72e-aa54",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "113b-ae60-cf66-a220", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Vorsheth Sire Of Pain", "id": "0d8e-b1d3-a28d-d466", "hidden": false, "targetId": "f91c-b0d6-f35c-a4c1", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Vorsheth Sire Of Pain",
+            "id": "7b79-84c1-cda2-dc44",
+            "description": "Opossing Bloodied characters gain Disadvantage while attacking. \n\nConstant\n\nWhen you would pay a Fate cost, reduce that cost by 1. Deal 2 damage to the character using that Fate ability\n\nReaction",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Taukmaw The Devourer",
+        "id": "4707-3fb4-e267-5a1f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "c127-1886-af52-cca6", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Taukmaw The Devourer", "id": "1cac-6b85-2e95-4cbc", "hidden": false, "targetId": "f8d4-3780-2b08-ad2e", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Taukmaw The Devourer",
+            "id": "8504-e52a-2c19-2356",
+            "description": "At the end of an opponent's activation, if they have more Fate in their pool than you, place one Fate from their pool onto Taukmaw.\n\nReaction\n\nAt the end of the Activation Phase, move all Fate from Taukmaw into your Fate pool.\n\nReaction",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Millard The Peacekeeper",
+        "id": "59e3-c5ce-fd33-e67f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "60fa-7939-c13c-d7da", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Millard The Peacekeeper", "id": "e1dc-f26c-fc69-bb3a", "hidden": false, "targetId": "626e-618a-a79b-b378", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Millard The Peacekeeper",
+            "id": "c978-9362-7dad-a159",
+            "description": "Whenever a friendly character falls or an opponent plays a Fate card, add a Fate to Millard. (Reaction)\n\nWhenever an opposing character falls or you play a fate card, remove a Fate from Millard. (Reaction)\n\nIncrease the cost for your opponent to play Fate by 1 for each Fate on Millard. (Constant)\n\n(2) Cancel an attack by removing X Fate from Millard. X= The attacking characters Rank +1. (Swift)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Foreire The Swift Breeze",
+        "id": "ee06-d797-452d-369e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Divinity", "id": "417c-319c-ed8e-153d", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Foreire The Swift Breeze", "id": "4477-1ce2-32a0-add3", "hidden": false, "targetId": "8001-55d8-f9c5-a1f8", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Foreire The Swift Breeze",
+            "id": "9c3c-b05e-a3ce-dc1f",
+            "description": "Each of your characters gains Evasive 1 (Constant)\n\n(2) Boost Speed and Fly (Swift)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Ethel The Blind Justice",
+        "id": "6370-4dad-9199-78c0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "45e4-89df-b7cd-34b6", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Ethel The Blind Justice", "id": "1f32-382b-0fa6-87c2", "hidden": false, "targetId": "956e-952d-bc1f-e9d4", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Ethel The Blind Justice",
+            "id": "82ca-7744-307a-9492",
+            "description": "If your opponent has more Fate cards in their hand at the end of the Activation Phase, you can force them to discard cards from their hand until they are equal to you, or you can draw cards until you are equal to them. (Reaction)\n\n(2) If a character is assigned a Boon or Bane, you can choose a different player's character and assign the same Boon or Bane. (Swift)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Ereshkigal The Reaper",
+        "id": "68fc-8470-d0b9-e0f8",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "2c50-83ab-558e-4192", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Ereshikigal The Reaper", "id": "89e7-047c-22e5-9787", "hidden": false, "targetId": "9dba-d1a2-173f-0bdb", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Ereshkigal The Reaper",
+            "id": "c791-fb1f-dc87-ca9d",
+            "description": "Whenever an opponent is counting range, treat all characters in play as though they are 1 distance further away. (Reaction)\n\n(X) After one of you characters falls, Attack with another character of equal or lower rank. X+ the attacking character's rank +1. (Reaction)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Ashara The Glorious Sun",
+        "id": "29ea-ac8b-2442-20bb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "19d3-452f-f5f2-9e92", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+        "infoLinks": [{"name": "Ashara The Glorious Sun", "id": "d1b0-7c6f-99e8-4a6e", "hidden": false, "targetId": "6915-a3e6-9611-ac2a", "type": "profile"}],
+        "rules": [
+          {
+            "name": "Ashara The Glorious Sun",
+            "id": "0a7f-1911-f415-e9e7",
+            "description": "At the beginning of the Activation Phase, shift one Fate to your pool. (Reaction)\n\n(1) When a character declares an attack, give that character Accuracy X for this attack. X = The amount of Fate in your pool. (Swift)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Neutral Heroes",
+        "id": "5bad-46fc-530d-14dc",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Hero", "id": "8db5-481c-6969-92ab", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Neutral Heroes",
+            "id": "4066-c02c-9104-f1aa",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "categoryLinks": [{"name": "Hero", "id": "d4ae-aa78-e3bb-409e", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "selectionEntries": [
+              {
+                "name": "Angel Ardat",
+                "id": "93ad-663f-ed6e-5cd1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "9d13-c482-b171-5e24", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "e31a-842c-0699-b789",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 9}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "dc91-3546-ccbc-b887",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Angel Ardat",
+                    "id": "fa1d-8359-1596-b144",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "10", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Declare Unrighteous (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Hunt The Guilty (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Meteoric Impact (Active Ability)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Hunter, Angel, Knight, Holy", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Accuracy 3, Evasive 3, Flight", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Declare Unrighteous",
+                    "id": "16e3-fc3f-4615-a1fe",
+                    "description": "After Ardat is deployed or an enemy character with a Guilt token falls place a Guilt token onto an enemy character. \n\nNote: Use a token from the box or a Fate crystal to represent the Guilt. This is applied to any unit on the enemy team. Do not choose one that will take a long time to be at as this pairs with the next skill.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Hunt the Guilty",
+                    "id": "8652-2561-667f-e639",
+                    "description": "When Ardat declares an attack against a character with a Guilt token, Boost her attack and defense.",
+                    "hidden": false
+                  },
+                  {"name": "Meteoric Impact", "id": "337e-454d-1f3e-67c0", "description": "Attack. You gain Advantage for this attack. Pierce 2 Daze and Wound", "hidden": false}
+                ]
+              },
+              {
+                "name": "Nancy",
+                "id": "d4ae-1488-e9de-bd6b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "146b-d1b4-46bb-c4ab", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "935c-8923-2728-dca0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "ca61-23c5-d7f7-47cc",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Nancy",
+                    "id": "0b6a-0c0f-1fee-966d",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "7", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Entangling Tentacles (Constant)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Flash of Steel {1} (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Whirling Defense {1} (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Human, Hunter, Rouge", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode, Wound", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Evasive 3", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Flash of Steel",
+                    "id": "5a71-9395-88f2-fa2c",
+                    "description": "When Nancy declares an attack she gains Accuracy X (X= the number of spaces Nancy has moved this activation)",
+                    "hidden": false
+                  },
+                  {"name": "Whirling Defence", "id": "c886-93b9-d794-39d5", "description": "When Nancy's attack resolves Evade and Sidestep", "hidden": false},
+                  {
+                    "name": "Entangling Tentacles",
+                    "id": "01bf-6963-258f-2eae",
+                    "description": "Enemy characters threatened by Nancy cannot use the Evasive keyword.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Wong",
+                "id": "273b-bd78-6f64-ff50",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "constraints": [
+                  {
+                    "id": "e398-fcaf-299e-c120",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "e348-2a97-caad-9538",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Wong",
+                    "id": "3538-4439-6c29-f945",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "8", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Danger Sense {2} (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Protect the Weak {1} (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Drunken Fist (Constant)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Beast, Guardian, Brute", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode, Break Attack", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade, Guard", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Evasive 2", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Danger Sense",
+                    "id": "5b25-0f88-4661-ab61",
+                    "description": "When an enemy within 3 and sight activates, if Wong is ready, Activate Wong (complete Wong's activation before resuming the current activation).",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Protect the Weak",
+                    "id": "9548-5d6b-20da-3970",
+                    "description": "When an adjacent Bloodied character or character lower cost is attacked, Wong may Sidestep. Then, if Wong could be a legal target for the attack, Wong becomes the defender.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Drunken Fist",
+                    "id": "ef19-ca36-a4af-b6d7",
+                    "description": "Wong gains Accuracy 2 and Advantage while attacking a character of higher cost.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Goron",
+                "id": "7a4c-2e72-26ed-a418",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "6419-08b1-5bfe-1651", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "50fa-60f0-06d4-a629",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "ed34-d70b-179a-c001",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Goron",
+                    "id": "9060-b11d-6927-31aa",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "8", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Against All Odds (Constant)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Almighty Smite {3} (Active Ability)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Challenging Shout {2} (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Dwarf, Guardian, Knight", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode, Daze (Stun if already Dazed)", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Guard", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "None", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {"name": "Against All Odds", "id": "91e9-7dc4-d2fb-e704", "description": "Goron gains Accuracy 1 for each enemy character that threatens him.", "hidden": false},
+                  {
+                    "name": "Almighty Smite",
+                    "id": "f7cf-25f9-6576-fcd7",
+                    "description": "Attack. Goron may re-roll up to two dice during this attack and may trigger critical effects using 4's and 5's.",
+                    "hidden": false
+                  },
+                  {"name": "Chellenging Shout", "id": "d739-d215-3bbf-f95a", "description": "Pull 1 on each enemy within 2. Boost Defense.", "hidden": false}
+                ]
+              },
+              {
+                "name": "Llyv'ia",
+                "id": "55ca-7b03-e761-2899",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "9655-1a3f-2ac2-79ab", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "de34-cda8-65e1-f589",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "a706-fa95-fa4c-6b92",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup"
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Llyv'ia",
+                    "id": "c3d4-e4a4-976d-7d61",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "6", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Loner (Constant)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Snipe {2} (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Spring Into Action {1} (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Hunter, Marksman, Rouge, Elf", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Accuracy 2, Evasive 2, Pierce 1", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Loner",
+                    "id": "578f-0835-787f-3172",
+                    "description": "While Llyv'ia has no friendly characters within 3 of her, she gains Advantage while attacking.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Spring Into Action",
+                    "id": "99ae-29f3-440e-889c",
+                    "description": "When Llyv'ia activates if she is the first character you have activated this round. Boost All",
+                    "hidden": false
+                  },
+                  {"name": "Snipe", "id": "041c-30f3-74ea-6b19", "description": "When Llyv'ia declares an attack, she gains +3 range for this attack.", "hidden": false}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Divinities",
+        "id": "3e33-12c2-00c8-3c48",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Divinity", "id": "e885-666a-a851-2bf9", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "constraints": [
+          {
+            "id": "d54a-e950-44e4-4458",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "entryLinks": [
+          {
+            "name": "Ashara The Glorious Sun",
+            "id": "2e57-7b69-3046-3aa5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "29ea-ac8b-2442-20bb",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "1bf7-95cf-05b4-2bfb",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Divight Fate Lord",
+            "id": "7f60-0150-f63a-1386",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "7cb3-ffd2-1bc5-934f",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "6d75-3900-6992-1925",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Ethel The Blind Justice",
+            "id": "e8cc-06bd-b4b9-e2c4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6370-4dad-9199-78c0",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "cb4b-204c-125f-c9bf",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Foreire The Swift Breeze",
+            "id": "e379-851d-a9fd-25a3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ee06-d797-452d-369e",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "62e6-f02d-a0c3-5417",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Millard The Peacekeeper",
+            "id": "1341-0f59-54fa-da73",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "59e3-c5ce-fd33-e67f",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "d8cf-df46-3aca-d586",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dark Divinites",
+        "id": "5780-8d48-fd92-4529",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [
+          {"name": "Divinity", "id": "46d9-a48d-f973-4817", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"},
+          {"name": "New CategoryLink", "id": "3cc3-e29b-9cf4-fac1", "hidden": false, "primary": false, "targetId": "6c59-7bcd-44f8-3c71"}
+        ],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "entryLinks": [
+          {
+            "name": "Cegorach The Trickster",
+            "id": "5816-eb2a-a11a-4d76",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "61a8-9821-8c29-b1db",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Divight Fate Lord",
+            "id": "5bda-9ea3-8d51-2576",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "7cb3-ffd2-1bc5-934f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Ereshkigal The Reaper",
+            "id": "1012-258b-278d-1501",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "68fc-8470-d0b9-e0f8",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Taukmaw The Devourer",
+            "id": "1cb1-1c73-c767-2b57",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "4707-3fb4-e267-5a1f",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Vorsheth Sire Of Pain",
+            "id": "0e6e-5014-9433-fc64",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ba8d-d307-b72e-aa54",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Upgrades",
+        "id": "ba3b-6f79-e920-db59",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [{"name": "New CategoryLink", "id": "a968-e6ba-9928-0f17", "hidden": false, "primary": true, "targetId": "6173-1a99-a86b-6e28"}],
+        "entryLinks": [
+          {
+            "name": "Adamantium Augment",
+            "id": "0b9d-ab35-9454-4e43",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bcd2-52ee-4e32-b5c0",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "9019-81dd-2880-d60a", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Battle Hardened",
+            "id": "1d62-4af9-13a0-6650",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "76a0-482b-e6a1-b488",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "680c-f67b-0933-827b", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Disciplined",
+            "id": "4642-8ad7-4be0-3c39",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "5c23-95ef-5eae-2f9d",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "5d84-199b-07e0-4706", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Heavy Plating",
+            "id": "f077-0062-8091-f70c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "15d1-21ed-8c0f-dbcb",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "56c8-daae-2834-10cf", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Embracing Unlife",
+            "id": "549e-b3f8-2245-36cd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f189-b818-378e-ce13",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "8c82-b589-119e-0c06", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Survival Instincts",
+            "id": "2fb4-2f1a-60ab-2bef",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b529-8e60-fa40-47a5",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "be4c-2479-6ef8-fe5a", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Unlimited Power",
+            "id": "0bb4-f5ca-964a-2278",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "f9ce-fd66-9dfe-3d1f",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "adf0-2f28-59fb-9f34", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Natural Leader",
+            "id": "587f-ed78-5f12-969a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "36f7-d53c-4bba-74a9",
+            "type": "selectionEntry",
+            "categoryLinks": [{"name": "Upgrades", "id": "a1d9-75a5-5394-2734", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+          },
+          {
+            "name": "Favoured One",
+            "id": "dbed-21b2-bf3a-1dfd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ea93-ff21-964b-0d79",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Fate Cards",
+        "id": "25a1-2c7b-e155-f761",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [{"name": "New CategoryLink", "id": "f3d4-cb3f-2b3d-e2aa", "hidden": false, "primary": true, "targetId": "41ed-e3d0-2adf-5513"}]
+      },
+      {
+        "name": "Keywords",
+        "id": "b904-7b2a-a21a-643e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [{"name": "Keywords", "id": "41bb-5499-babb-e79d", "hidden": false, "primary": true, "targetId": "e900-5d11-8941-29a8"}],
+        "entryLinks": [
+          {
+            "name": "Accuracy",
+            "id": "7a9b-b20f-0d80-6204",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "562f-956a-3f73-3315",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Deadly",
+            "id": "c250-cd27-5088-c97e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "99c4-52ae-1957-53af",
+            "type": "selectionEntry"
+          },
+          {"name": "Huge", "id": "a4e5-5381-52a2-87a2", "collective": false, "hidden": false, "import": true, "targetId": "dd2a-4456-d8e2-ff50", "type": "selectionEntry"},
+          {
+            "name": "Evasive",
+            "id": "528f-5691-529b-47d2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "b56a-7809-551f-e525",
+            "type": "selectionEntry"
+          },
+          {"name": "Fly", "id": "0ef7-1a98-0f5e-b183", "collective": false, "hidden": false, "import": true, "targetId": "1428-43b6-e9e3-6192", "type": "selectionEntry"},
+          {
+            "name": "Immune",
+            "id": "c58c-e713-42ab-8745",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "51e5-651f-3875-8a2a",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Limited Range",
+            "id": "a986-871c-11ca-dbd6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1a0a-4273-c71f-a9f0",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Pierce",
+            "id": "bf37-7c56-affa-abf4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2f79-429e-97b0-691c",
+            "type": "selectionEntry"
+          },
+          {"name": "Pull", "id": "4bdf-0b78-639e-0a66", "collective": false, "hidden": false, "import": true, "targetId": "6aa8-8f2f-8e4f-d437", "type": "selectionEntry"},
+          {"name": "Push", "id": "808e-13dc-84a5-aee7", "collective": false, "hidden": false, "import": true, "targetId": "d1ea-586b-586f-f3b8", "type": "selectionEntry"},
+          {
+            "name": "Reach",
+            "id": "328e-3573-260f-0b26",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "0a4b-ebe6-3bfb-c393",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Recover",
+            "id": "db7d-15f0-3b6b-0f68",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "4ae1-386c-6971-767a",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": "Divinities",
+        "id": "40d8-e737-9195-fcfa",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [
+          {"name": "Divinity", "id": "5c86-d7d8-fd92-5922", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"},
+          {"name": "Divinity", "id": "5871-b335-ed70-14df", "hidden": false, "primary": false, "targetId": "6c59-7bcd-44f8-3c71"}
+        ],
+        "entryLinks": [
+          {
+            "name": "Dark Divinites",
+            "id": "3720-9239-5bd7-f9ee",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "5780-8d48-fd92-4529",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Light Divinities",
+            "id": "1a49-3bd2-a408-2d6d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3e33-12c2-00c8-3c48",
+            "type": "selectionEntry"
+          }
+        ]
+      }
+    ]
+  }
+}

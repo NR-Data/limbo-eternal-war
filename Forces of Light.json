@@ -1,0 +1,2844 @@
+{
+  "catalogue": {
+    "name": "Forces of Light",
+    "id": "f4b9-eebe-b016-7298",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "9eae-0060-d2cb-2349",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "categoryEntries": [{"name": "Army", "id": "ba7b-a699-d0cb-e5da", "hidden": false}],
+    "entryLinks": [
+      {
+        "name": "Heroes",
+        "id": "14b4-0aaf-afea-72cb",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "773d-3eae-0869-b0e4",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "a7ab-67d9-0b44-2645", "hidden": false, "primary": true, "targetId": "92b2-75fa-5ad7-dc75"}]
+      },
+      {
+        "name": "Lord",
+        "id": "a8a0-c2d3-3398-723a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "ff3e-c13b-133e-1ca0",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lord", "id": "a4aa-bce3-c71c-b2d9", "hidden": false, "primary": true, "targetId": "03b7-6aa9-a03b-8071"}],
+        "constraints": [
+          {
+            "id": "264f-834a-fe6e-285b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "roster",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "name": "Neutral Heroes",
+        "id": "622e-f682-e9dc-dda0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "5bad-46fc-530d-14dc",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Hero", "id": "30a1-e020-73ad-1fde", "hidden": false, "primary": true, "targetId": "92b2-75fa-5ad7-dc75"}]
+      },
+      {
+        "name": "Troops",
+        "id": "44e8-8d5e-5ef4-ad79",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "d192-2d5d-7257-ca6d",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {"name": "Hero", "id": "e051-70df-580b-69f7", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"},
+          {"name": "Troop", "id": "22fb-a524-8319-6ee4", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}
+        ]
+      },
+      {
+        "name": "Light Divinities",
+        "id": "7519-e5eb-98f3-ef6e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "3e33-12c2-00c8-3c48",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Divinity", "id": "8362-e019-cfd7-5827", "hidden": false, "primary": false, "targetId": "6c59-7bcd-44f8-3c71"}]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Lord",
+        "id": "ff3e-c13b-133e-1ca0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "3949-3f30-af39-a49e", "hidden": false, "primary": true, "targetId": "03b7-6aa9-a03b-8071"}],
+        "constraints": [
+          {
+            "id": "7b6b-c70e-c96e-a764",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Raphael",
+            "id": "b3fd-6e1b-0dc4-1d15",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Lord", "id": "47f4-b597-f6f8-608e", "hidden": false, "primary": false, "targetId": "03b7-6aa9-a03b-8071"}],
+            "constraints": [
+              {
+                "id": "2314-5e0d-c4ac-6f8a",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 14}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "profiles": [
+              {
+                "name": "Raphael",
+                "id": "b87c-d817-5e21-ce78",
+                "hidden": false,
+                "typeId": "b0b7-02f8-2474-26f5",
+                "typeName": "Lord",
+                "characteristics": [
+                  {"name": "Health", "$text": "21", "typeId": "e6d2-e7ef-38c9-dd30"},
+                  {"name": "Attack", "$text": "4", "typeId": "914f-b956-277c-033e"},
+                  {"name": "Range", "$text": "2", "typeId": "0a3b-eed5-5248-6151"},
+                  {"name": "Defense", "$text": "3", "typeId": "8926-1576-44d8-b258"},
+                  {"name": "Armour", "$text": "2", "typeId": "0721-716e-2c6e-6ff5"},
+                  {"name": "Speed", "$text": "4", "typeId": "a34d-8e5f-d950-64f2"},
+                  {"name": "Skill 1", "$text": "Blade Cyclone (3)\n\nActive Ability", "typeId": "1b0e-4759-ab75-9856"},
+                  {"name": "Skill 2", "$text": "Brilliant Radiance\n\nConstant", "typeId": "66d2-fc17-f518-ed0d"},
+                  {"name": "Skill 3", "$text": "Holy Rage\n\nConstant", "typeId": "2e69-5be8-ce5e-d7a4"},
+                  {"name": "Traits", "$text": "Guardian, Holy, Human, Technomancer", "typeId": "ff57-cc56-85da-15f8"},
+                  {"name": "Criticals", "$text": "Explode, Wound", "typeId": "4f32-eb95-3813-58b4"},
+                  {"name": "Token Skills", "$text": "Focus, Guard, Channel", "typeId": "0b95-f7de-c5f1-7a10"},
+                  {"name": "Keywords", "$text": "Deadly 2, Huge, Fly, Immune, Pierce 1, Reach", "typeId": "d773-cf12-6468-01e2"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Blade Cyclone",
+                "id": "c564-0d27-cb84-e2fa",
+                "description": "Each Character Raphael Threatens takes X Dice of Damage (X= Raphael's Attack +1) Reduce each Character's Armor value by Raphael's Pierce value while resolving this ability. \n\nFAQ: For those using this ability you will not use Deadly with this as it is an Active Ability. It does not have the Attack text in front of it so it does not use Keywords other than those mentioned in the actions text.",
+                "hidden": false
+              },
+              {
+                "name": "Brilliant Radiance",
+                "id": "ea53-d183-8d67-50e2",
+                "description": "Characters threatened by Raphael lose -1 Accuracy or -2 while attacking her.",
+                "hidden": false
+              },
+              {
+                "name": "Holy Rage",
+                "id": "3c63-0927-43cf-f904",
+                "description": "While Bloodied, Raphael gets +1 Attack, +1 Speed and Advantage while Attacking\n\nFAQ: This ability can combine with Blade Cyclone (BC). If this is activated before BC you will use the +1 of this ability as well as +1 of BC",
+                "hidden": false
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Upgrades",
+                "id": "beb9-f404-39d1-24c1",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Upgrades", "id": "c3ee-1331-5194-6b52", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "4205-1b27-840f-d36a",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              },
+              {
+                "name": "Keywords",
+                "id": "821c-3eff-c7f3-e9a3",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "entryLinks": [
+                  {
+                    "name": "Keywords",
+                    "id": "6d80-8b9b-6fab-c08e",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b904-7b2a-a21a-643e",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Veronique",
+            "id": "7daf-5952-a396-5282",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Lord", "id": "f2b7-8918-a63a-86ce", "hidden": false, "primary": false, "targetId": "03b7-6aa9-a03b-8071"}],
+            "constraints": [
+              {
+                "id": "e11e-9374-7340-1a22",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 12}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "profiles": [
+              {
+                "name": "Veronique",
+                "id": "7d0d-fedc-5628-7282",
+                "hidden": false,
+                "typeId": "b0b7-02f8-2474-26f5",
+                "typeName": "Lord",
+                "characteristics": [
+                  {"name": "Health", "$text": "16", "typeId": "e6d2-e7ef-38c9-dd30"},
+                  {"name": "Attack", "$text": "6", "typeId": "914f-b956-277c-033e"},
+                  {"name": "Range", "$text": "2", "typeId": "0a3b-eed5-5248-6151"},
+                  {"name": "Defense", "$text": "4", "typeId": "8926-1576-44d8-b258"},
+                  {"name": "Armour", "$text": "3", "typeId": "0721-716e-2c6e-6ff5"},
+                  {"name": "Speed", "$text": "4", "typeId": "a34d-8e5f-d950-64f2"},
+                  {"name": "Skill 1", "$text": "Hyperkinetic Perforation [Active Ability]", "typeId": "1b0e-4759-ab75-9856"},
+                  {"name": "Skill 2", "$text": "Telekinetic Shield (2) \n[Reaction]", "typeId": "66d2-fc17-f518-ed0d"},
+                  {"name": "Skill 3", "$text": "Unlimited Power [Swift]", "typeId": "2e69-5be8-ce5e-d7a4"},
+                  {"name": "Traits", "$text": "Guardian, Human, Leader, Technomancer", "typeId": "ff57-cc56-85da-15f8"},
+                  {"name": "Criticals", "$text": "Explode or Daze", "typeId": "4f32-eb95-3813-58b4"},
+                  {"name": "Token Skills", "$text": "Focus, Command, Shieldm Channel, Guard", "typeId": "0b95-f7de-c5f1-7a10"},
+                  {"name": "Keywords", "$text": "Huge, Immune, Pierce 2, Reach", "typeId": "d773-cf12-6468-01e2"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Hyperkinetic Perforation",
+                "id": "5472-6f49-4a0c-a724",
+                "description": "Attack. Veronique gains Advantage for this attack. ignore all tokens, keywords, abilities on enemy characters for this attack. Your opponent cannot play Fate. \n\nFAQ: Since this Ability has the Attack in front you will use all your keywords as if this were a regular attack. This attack is the only way to bypass the Immune Keyword on many opponents. If a status is applied to a character with immune due to this attack it will resolve once then",
+                "hidden": false
+              },
+              {
+                "name": "Telekinetic Shield",
+                "id": "cc5a-05be-412a-8dab",
+                "description": "When a friendly character within 3 and sight is attacked, the attacker gains Disadvantage. After the attack resolves, Daze the attacker",
+                "hidden": false
+              },
+              {
+                "name": "Unlimited Power",
+                "id": "a54b-abef-3298-6b20",
+                "description": "Channel\n\n\nNote: This is a great way to get one free fate each time you activate this character. Remember Swifts can be used once per round and only when the character has been activated.",
+                "hidden": false
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Keywords",
+                "id": "9d87-fcb4-7cc5-3ace",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "entryLinks": [
+                  {
+                    "name": "Keywords",
+                    "id": "ee20-1235-92ec-fec8",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "b904-7b2a-a21a-643e",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              },
+              {
+                "name": "Upgrades",
+                "id": "389d-2de2-1aa0-ad5e",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "c937-9a8a-e11a-5834",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Divinities",
+        "id": "0543-a81f-d571-796f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "categoryLinks": [{"name": "Divinity", "id": "eb8c-1a02-cf0e-8ee6", "hidden": false, "primary": true, "targetId": "6c59-7bcd-44f8-3c71"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "entryLinks": [
+          {
+            "name": "Dark Divinites",
+            "id": "01f8-d47d-9173-e445",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "5780-8d48-fd92-4529",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "6d4b-fbc7-ad9a-5a98",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Light Divinities",
+            "id": "5aae-1c85-f82b-0476",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3e33-12c2-00c8-3c48",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "e9fe-d49f-30a5-e03c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": true,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heroes",
+        "id": "773d-3eae-0869-b0e4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Hero", "id": "3e53-7714-e41b-eed6", "hidden": false, "primary": true, "targetId": "92b2-75fa-5ad7-dc75"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Heroes",
+            "id": "16f5-acc1-6e03-d540",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "categoryLinks": [{"name": "Hero", "id": "2d0c-fb86-25d5-7bf6", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "selectionEntries": [
+              {
+                "name": "Rodrigo",
+                "id": "efce-0b68-7e45-40a4",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "c6ab-0da8-204f-095d", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "b17c-cf30-4708-4bf7",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 10}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "f859-e96a-0ae1-6223",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "c494-0bac-121f-0009", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Rodrigo",
+                    "id": "4265-5164-6573-8001",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "9", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "2", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "2", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "6", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Brilliant Charge {2} (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Peerless Champion (Constant)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Stampede {1} (Active Ability)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Guardian, Human, Knight", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Shield, Guard", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Pierce 1, Reach", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Brilliant Charge",
+                    "id": "f383-dd59-3378-cac3",
+                    "description": "When Rodrigo declares an attack after Charging, he gains +1 Attack for every 2 spaces moved this activation.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Peerless Champion",
+                    "id": "8213-24dd-cd5a-0d96",
+                    "description": "While attacking or defending, Rodrigo may increase or decrease the result on any die by 1 (before resolving re-rolls or critical effects.)\n\nNote: Doing this can assist you when trying to get rolls of 5 or defending against rolls of 5. This is in addition to any Advantage or Disadvantage in the attack.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Stampede",
+                    "id": "2ff0-23f3-ea20-c796",
+                    "description": "Move. Rodrigo does not provoke Attack of Opportunity during this activation and he can move through smaller characters. When you move through a smaller character, that character takes 1 damage. \n\nNote: This is for any model with a small base (Heroes included). Huge enemies can not be affected by this and will stop any movement.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Sephiria",
+                "id": "6744-687d-d36b-18a4",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "fba7-a4c4-09b7-65ed", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "4aa6-8980-e8f7-1e95",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 9}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "0fc5-2bf2-167e-e6ee",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "9336-da25-817a-8270", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Sephiria",
+                    "id": "e267-ed4f-39e3-2348",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "8", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Blessed by the Heavens {1} (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Divine Decree (Swift)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Radiant Strike (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Angel, Guardian, Holy, Knight, Leader", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade, Common, Guard", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Accuracy 2, Evasive 2, Flight", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Blessed by the Heavens",
+                    "id": "4c04-b02b-775c-186c",
+                    "description": "When Sephiria is attacked, the attacking character cannot use keywords during this attack. \n\nThis attack can help against armies with many Deadly keywords. As it is a reaction it can be activated as many times as you have Fate to spare.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Divine Decree",
+                    "id": "97d5-e7de-78c2-a211",
+                    "description": "Command an Angel or Holy character, regardless of Rank. you may spend {2} to assign that character a Shield Token.",
+                    "hidden": false
+                  },
+                  {"name": "Radiant Strike", "id": "f227-4ed0-938e-6385", "description": "After Sephiria's attack resolves, Daze the defender", "hidden": false}
+                ]
+              },
+              {
+                "name": "Ellandarieth",
+                "id": "b8be-b9d5-3f8f-4959",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "3647-56ed-1fb6-4201", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "17af-d81e-a40f-9e19",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 9}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "0ccc-ed4d-ecb2-2680",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "4da8-b659-f47c-4f57", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Ellandarieth",
+                    "id": "f784-0dde-fb3a-cbd0",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "12", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1 Melee/ 5 Range", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Lioness' Roar {3} (Swift)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Savage Pounce {2} (Active Ability)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Unstoppable (Constant)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Angel, Beast, Brute, Marksman", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Accuracy 2, Pierce 1, Flight", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Lioness' Roar",
+                    "id": "f668-c665-d589-a64b",
+                    "description": "Boost All herself. Break Attack all enemy characters of lower rank within 3. (Troops)",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Unstoppable",
+                    "id": "285a-8865-cef2-f936",
+                    "description": "Elladarieth ignores all effects which reduce or prevent her movement and cannot be moved by opposing effects.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Savage Pounce",
+                    "id": "13a2-c9c9-394a-ddd9",
+                    "description": "Melee Attack. If Elladarieth has charged this turn, -1 Attack and Deadly 2 for this attack.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Godfrey",
+                "id": "9cb2-e04f-1034-02c3",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "3460-17d6-788a-f07c", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "13df-f3c9-547d-192f",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 9}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "659b-f2ee-fbb0-423e",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "63ea-a2e1-d7f3-7215", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Godfrey",
+                    "id": "b978-960f-8649-6184",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "9", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "2", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "2", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Born Leader {2} (Swift)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Follow My Example (Constant)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Great Cleave {2} (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Brute, Human, Knight, Leader", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Command", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Accuracy 2, Deadly 2, Reach", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {"name": "Born Leader", "id": "8570-3db6-3191-5930", "description": "Command. The commanded character may then perform any action.", "hidden": false},
+                  {
+                    "name": "Follow My Example",
+                    "id": "025e-99c9-8fd8-bfb0",
+                    "description": "While another friendly character is melee attacking a character Godfrey threatens, that character gains Accuracy 1 (Accuracy 2 if friendly unit is adjacent to Godfrey)",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Great Cleave",
+                    "id": "8e25-68d7-c741-e126",
+                    "description": "After Godfrey's attack resolves, choose a character adjacent to the defender that you threaten. Attack that character. Godfrey gains disadvantage during this attack.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Elya",
+                "id": "72b7-4bec-7110-b8c2",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "973a-f314-5f0b-8f0e", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "3177-4eaa-73d7-bc28",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "bc0a-89b1-c212-6e51",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "925e-71f8-e197-74fa", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Elya",
+                    "id": "3557-bcfa-2429-63cd",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "7", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Duelist (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Commander of the Rose (Swift)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Swirling Riposte {3} (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Knight, Human, Rouge, Rose, Leader", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode or Wound", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade, Command", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Pierce 1", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Duelist",
+                    "id": "e546-2a5e-1876-a049",
+                    "description": "While Elya is threatened by only a single enemy she gains Accuracy 4 and Evasive 4",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Commander of the Rose",
+                    "id": "c668-5c20-e441-ede2",
+                    "description": "Command a Rose character, regardless of Rank. you may spend {2} to Command each adjacent Rose character regardless of Rank. \n\nNote: This Swift is a great way to make a Power move against your enemy. If you are in a pinch use this to get an instantaneous activation of a near by character without having to wait for their turn. (Still counts as that Characters activation) This does not activate whole units. Only 1 troop in that unit.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Swirling Riposte",
+                    "id": "603d-1f4a-00ab-fb43",
+                    "description": "After an attack against Elya resolves Sidestep. Attack the enemy that just attacked Elya. \n\nNote: This does not count as an activation as it is a reaction. This can activate each time a unit attacks Elya. Not just once per round.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Henril",
+                "id": "99f2-0bbf-e33a-bb0d",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "6ea9-74bb-eeb6-8ce7", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "a1b8-846b-be65-c232",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "3a92-1f77-9560-8c16",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "adcb-6fc4-a687-86a1", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Henril",
+                    "id": "6b7b-9a11-0da1-15ce",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "7", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "3", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Blessed Bolt {2} (Active Ability)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Consecrated Ward (Constant)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Break the Seal (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Hunter, Human, Rouge, Marksman", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Accuracy 2, Evasive 3", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Consecrated Ward",
+                    "id": "e444-b2dc-d26e-5877",
+                    "description": "Henril cannot be chose as part of enemy card effects or abilities.\n\nNote: This makes him a great foe to Vahlrose and any Lillin characters.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Break the Seal",
+                    "id": "5e83-80cb-b0ca-0cd4",
+                    "description": "When Henril's Health is Equal or less than 2 then Recover 2, Attack +3. cannot use ranged weapons, Defense +1, Speed +1 place a Wound Token on himself Cannot use the trait Human for the rest of the game.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Blessed Bolt",
+                    "id": "d5b7-72d7-d27d-2bda",
+                    "description": "Attack. After this attack resolves, if the defender too any damage as part of this attack, Daze them and deal 3 Dice of Direct Damage to them. \n\nNote: With this attack you ignore enemy armor in the Defend total calculations. (Only with the Dice of Direct Damage)",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Betrogard",
+                "id": "09a2-42fd-dd01-b988",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "079f-895e-727a-aa41", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "c658-a497-9343-7a51",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "df32-29fd-5fb3-65b5",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "76cf-0b5b-eafc-57a8", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Betrogard",
+                    "id": "c1a2-0eef-726b-7a94",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "7", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "3", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "2", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "3", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Fear the Fearless {2} (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Relentless (Constant)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Silence of the Fates (Constant)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Brute, Human, Knight, Leader", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode or Daze (Push 2)", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Shield, Guard", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Deadly 2, Immune, Pierce 2", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Fear the Fearless",
+                    "id": "b53c-8079-d3b5-25cc",
+                    "description": "When Bertrogard attacks or is attacked, Break Any on the Opposing character.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Silence of the Fates",
+                    "id": "aba5-0e0b-2222-de54",
+                    "description": "While Bertrogard is attacking or defending your opponent cannot play Fate cards.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Relentless",
+                    "id": "493a-6a8c-35ac-ac59",
+                    "description": "Betrogard cannot fall except at the end of the Activation Phase. he cannot be felled due to enemy effects or abilities. \n\nNote: If an enemy effect were to kill him he would instead fall at the end of the Activation phase instead of immediately.",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Charlotte",
+                "id": "0f1e-4cb1-484e-3bf2",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "1f15-3af9-5b23-dda3", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "aff6-ca8c-de80-83c2",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "d846-dfba-7385-f02d",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "3183-056f-7691-1d44", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Charlotte",
+                    "id": "3a04-0037-f2b4-48b1",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "6", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "5", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Expose Weakness {2} (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Shadowstep (Swift)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "When They Can't Strike Back (Constant)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Hunter, Human, Rouge", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode or Break Defence", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "Evasive 6", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Expose Weakness",
+                    "id": "15c8-744c-bebf-cbff",
+                    "description": "When Charlotte attacks, choose one:\nPierce 2 for this attack or -1 Defence",
+                    "hidden": false
+                  },
+                  {
+                    "name": "When They Can't Strike Back",
+                    "id": "192b-041d-670f-6e11",
+                    "description": "While Charlotte is attacking an activated character, she gains Accuracy 2 and Advantage\n\nNote: This means any character that has already been activated this phase.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Shadowstep",
+                    "id": "6339-b40b-f8d8-affc",
+                    "description": "Place Charlotte into an empty space within 2. (Great to cover distance before moving or attacking as it is a Swift)",
+                    "hidden": false
+                  }
+                ]
+              },
+              {
+                "name": "Yakun",
+                "id": "0297-86ab-a1d8-b4d3",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Hero", "id": "4157-14ef-67e0-ae8e", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+                "constraints": [
+                  {
+                    "id": "f5a2-8f03-7439-ce52",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "9ec5-49d7-e7c1-7c6f",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "56de-ee7a-779d-f7f5", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Yakun",
+                    "id": "0c87-d3d1-3102-2ada",
+                    "hidden": false,
+                    "typeId": "3ae3-9405-766b-6417",
+                    "typeName": "Hero",
+                    "characteristics": [
+                      {"name": "Health", "$text": "6", "typeId": "a13c-10b7-2896-bb31"},
+                      {"name": "Attack", "$text": "2", "typeId": "6c2e-f536-b3a6-1fa9"},
+                      {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                      {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                      {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                      {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                      {"name": "Skill 1", "$text": "Bright Blessing {2} (Active Ability)", "typeId": "4b76-bce7-94ec-53ff"},
+                      {"name": "Skill 2", "$text": "Chosen One (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                      {"name": "Skill 3", "$text": "Inspiration {1} (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                      {"name": "Traits", "$text": "Holy, Human, Leader", "typeId": "4ccc-8757-1b3b-3c31"},
+                      {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                      {"name": "Token Skills", "$text": "Focus, Channel Command", "typeId": "80f8-014e-3c19-66d6"},
+                      {"name": "Keywords", "$text": "None", "typeId": "c0b7-ff64-68c6-0bcc"}
+                    ]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Bright Blessing",
+                    "id": "ecc2-0662-1fef-e904",
+                    "description": "Recover 4 a character within 2 and sight. Discard all Banes from that character. \n\nNote: This can not be applied to herself",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Chosen One",
+                    "id": "7b97-95c0-affb-4e66",
+                    "description": "When Yakun activates, if you have fewer Fate in your pool than your opponent, shift one Fate to your pool.",
+                    "hidden": false
+                  },
+                  {"name": "Inspiration", "id": "5391-3c78-db7d-b8ba", "description": "Command, ignoring Rank", "hidden": false}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Troops",
+        "id": "d192-2d5d-7257-ca6d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Troop", "id": "0daf-fba7-bd5e-5baf", "hidden": false, "primary": true, "targetId": "9d34-3652-fcc5-0fa3"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Troops",
+            "id": "9278-e9b3-61d7-1bb2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "categoryLinks": [{"name": "Troop", "id": "a974-de5b-c92f-a0b3", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+            "selectionEntryGroups": [
+              {
+                "name": "Shield Guards",
+                "id": "164b-f97a-2f39-8900",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "053d-be78-b9a4-77c0", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "c90f-2163-bc82-dfd6",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "16e4-9857-c62d-3818",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "2896-1232-00b7-17c0", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Protect the King",
+                    "id": "c16b-60f4-0b2f-2489",
+                    "description": "After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Shield Bash",
+                    "id": "94bf-7e56-3067-21bd",
+                    "description": "Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender.",
+                    "hidden": false
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Guard",
+                    "id": "11f7-4153-43fc-6419",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "2dbc-4342-b052-3364", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "7f64-60dd-5147-3737",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Shield Guard",
+                        "id": "f3ce-f26e-fd95-8509",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "6", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "4", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "2", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "3", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Protect The King (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Shield Bash (Active Ability)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n5 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Elite, Pierce 2", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard, Shield", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Protect the King",
+                        "id": "2144-0c75-8f13-1189",
+                        "description": "After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "Shield Bash",
+                        "id": "14a7-ce7d-d836-f5a9",
+                        "description": "Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "3 Guards",
+                    "id": "651a-d41f-b160-3882",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "51c1-01a5-61a2-4cba", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "d777-faf7-63f7-5a99",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 13}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Shield Guard",
+                        "id": "533e-c1cb-e989-6d4a",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "6", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "4", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "2", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "3", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Protect The King (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Shield Bash (Active Ability)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 =5 Points\n2= 9 Points\n3= 13 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Elite, Pierce 2", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard, Shield", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Protect the King",
+                        "id": "aaac-5eb3-a182-8af0",
+                        "description": "After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "Shield Bash",
+                        "id": "0e35-8efd-cbe0-18ef",
+                        "description": "Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Guards",
+                    "id": "034a-74f6-d068-d8ef",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "c7b8-f32c-7229-62cc", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "a4bb-9c6a-5720-e047",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 9}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Shield Guard",
+                        "id": "9d07-b149-5b9d-4310",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "6", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "4", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "2", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "3", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Protect The King (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Shield Bash (Active Ability)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 =5 Points\n2= 9 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Elite, Pierce 2", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard, Shield", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Protect the King",
+                        "id": "8987-abf4-b45a-bfd5",
+                        "description": "After a friendly adjacent character is attacked, move a Shield token from yourself to the defending character.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "Shield Bash",
+                        "id": "1af6-5794-c98f-5e5f",
+                        "description": "Attack 3. You lose Pierce 2 for this attack. If this attack deals at least 1 damage, Daze the defender.",
+                        "hidden": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "The Rose's Thorns",
+                "id": "54a8-ec46-8724-7c36",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "b6fb-3e12-8800-0321", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "834e-85b2-9472-16a0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "13a7-8fc6-7823-8cc0",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "da90-468a-df5e-5f63", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Avenger",
+                    "id": "5a05-f935-6611-1778",
+                    "description": "When a friendly Hero or Rose character Falls, Focus or Attack. \n\nNote: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "Light in the Dark",
+                    "id": "fccf-d2a7-d27e-627e",
+                    "description": "At the end of this character's Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation.",
+                    "hidden": false
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Thorn",
+                    "id": "6cac-9e12-51be-62ee",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "6735-b37f-1b31-121f", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "2c03-1a49-9ac5-d658",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "The Rose's Thorn",
+                        "id": "39f1-517d-00e6-611a",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "5", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "4", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Light in the Dark (Active Ability)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n4 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Elite, Accuracy 2", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Avenger",
+                        "id": "1430-e4cc-13ff-8341",
+                        "description": "When a friendly Hero or Rose character Falls, Focus or Attack. \n\nNote: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "Light in the Dark",
+                        "id": "b518-c7bf-3120-0ddb",
+                        "description": "At the end of this character's Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "3 Thorns",
+                    "id": "949e-12a2-dcd3-3895",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "9954-4ac7-8e75-21b9", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "3648-4a75-eabc-6659",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 11}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "The Rose's Thorn",
+                        "id": "9ac4-e906-4543-7ed7",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "5", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "4", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Light in the Dark (Active Ability)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 =4 Points\n2 = 8 Points\n3 = 11 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Elite, Accuracy 2", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Avenger",
+                        "id": "d2a7-48e8-1d56-7a53",
+                        "description": "When a friendly Hero or Rose character Falls, Focus or Attack. \n\nNote: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "Light in the Dark",
+                        "id": "d421-387c-da3b-65ee",
+                        "description": "At the end of this character's Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Thorns",
+                    "id": "40d9-63f6-bf28-d7a2",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "d07e-8835-9697-0ba9", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "2dd8-2318-bf4e-32af",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "The Rose's Thorn",
+                        "id": "24df-541a-d1fa-e744",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "5", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "4", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Light in the Dark (Active Ability)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 =4 Points\n2 = 8 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Elite, Accuracy 2", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Avenger",
+                        "id": "39d2-2501-8b35-7277",
+                        "description": "When a friendly Hero or Rose character Falls, Focus or Attack. \n\nNote: This is a better version of a basic Rose Knights Avenger. You do not need to be near your ally when they fall.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "Light in the Dark",
+                        "id": "2ec8-d73e-1fb7-c0c7",
+                        "description": "At the end of this character's Activation, Recover 3 a troop within 2. You may remove a Bane from the troop. Limit once per group activation.",
+                        "hidden": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tiger Knight Archers",
+                "id": "c28a-b3a6-d1da-8bfb",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "b81d-b8f5-a236-c339", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "f4d7-b505-4239-03f7",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "ce9a-a9af-28eb-056c",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "fe68-f13d-b7d4-207d", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Blood Scent",
+                    "id": "9c10-613d-8767-6148",
+                    "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                    "hidden": false
+                  },
+                  {"name": "Eye of The Tiger", "id": "12a3-deba-09a6-d9b6", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Archer",
+                    "id": "075a-3d51-239e-6e04",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "8e96-af05-9bcd-9eb6", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "ead8-9a0a-113f-215b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Archer",
+                        "id": "3c43-2d0c-4a84-3800",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Blood Scent (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Eye of the Tiger (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Human, Marksman, Knight", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n3 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Pierce 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Blood Scent",
+                        "id": "ee0c-6d08-c96d-fe48",
+                        "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                        "hidden": false
+                      },
+                      {"name": "Eye of The Tiger", "id": "6164-1680-f34d-bae2", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "3 Archers",
+                    "id": "78ec-40ba-4549-fa6e",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "0b24-c1c6-83fc-4a08", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "02d0-5968-12a1-0116",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Archer",
+                        "id": "a1a1-f7d6-fa32-0d53",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Blood Scent (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Eye of the Tiger (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Human, Marksman, Knight", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1= 3 Points\n2= 6 Points\n3= 8 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Pierce 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Blood Scent",
+                        "id": "aac3-0087-761b-e480",
+                        "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                        "hidden": false
+                      },
+                      {"name": "Eye of The Tiger", "id": "8731-3033-7b9b-0144", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "2 Archers",
+                    "id": "a030-81c8-6315-b55c",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "85ee-312e-c795-d79c", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "43a4-6067-5063-db34",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Archer",
+                        "id": "a736-0be1-96b0-abe1",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Blood Scent (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Eye of the Tiger (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Human, Marksman, Knight", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1= 3 Points\n2= 6 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Pierce 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Blood Scent",
+                        "id": "f235-7bbc-85ce-b9ca",
+                        "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                        "hidden": false
+                      },
+                      {"name": "Eye of The Tiger", "id": "cde3-7c4a-0380-1258", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tiger Knight Halberdiers",
+                "id": "3fc4-76f1-e7db-d25f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "ef2d-ce70-762a-da73", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "1474-af27-d26a-5ae0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "0354-eee8-5f8c-fec2",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "e682-58f2-e82b-7e9b", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Opportunist",
+                    "id": "f808-a9fb-111d-b724",
+                    "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "The Best Defence",
+                    "id": "1a45-66df-47fe-e3cf",
+                    "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                    "hidden": false
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Halberdier",
+                    "id": "0fe3-87ef-4963-bcac",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "cbe4-156e-9251-216c", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "8d4f-1510-8ec7-427c",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Halberdier",
+                        "id": "bbcb-c27b-8168-33f7",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Opportunist (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "The Best Defence (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n3 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "None", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Opportunist",
+                        "id": "b055-046e-9deb-86c6",
+                        "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "The Best Defence",
+                        "id": "0720-918b-75c3-c2aa",
+                        "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "3 Halberdier",
+                    "id": "e627-1538-3425-a45c",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "29c8-10b0-3d96-9e47", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "23c8-0060-e883-8557",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Halberdier",
+                        "id": "32dd-f50f-a3fc-22ce",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Opportunist (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "The Best Defence (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points\n3 = 7 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "None", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Opportunist",
+                        "id": "c138-e232-11cd-fc5b",
+                        "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "The Best Defence",
+                        "id": "b5b2-cddb-fc49-608e",
+                        "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Halberdier",
+                    "id": "dc60-7317-6d13-dce8",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "9e0f-8627-2d17-9f63", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "cd11-d2d0-aa9a-ec49",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Halberdier",
+                        "id": "77ad-575d-8e8a-f6ed",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Opportunist (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "The Best Defence (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "None", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Opportunist",
+                        "id": "8b1a-984f-f2f0-a200",
+                        "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "The Best Defence",
+                        "id": "61b8-fb9e-08ef-d577",
+                        "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                        "hidden": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Rose Knights",
+                "id": "a1bf-596c-24e2-41c6",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "c4e5-91d7-0bd7-43c1", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "751b-acfa-59d1-a898",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "665c-96b4-8ce4-e7d7",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "c39f-5398-48c2-243f", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Knight",
+                    "id": "786f-2afd-46a4-eca4",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "0aed-d8b3-dd13-f918", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "89cb-b2c4-8d9f-0fc9",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Rose Knight",
+                        "id": "6820-4fa1-a6a5-863f",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Teamwork (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n3 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Accuracy 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {"name": "Avenger", "id": "90af-4602-4d92-fe7d", "description": "When a friendly Hero or Rose character within 2 false Focus or Attack", "hidden": false},
+                      {"name": "Teamwork", "id": "789d-da18-2e75-d371", "description": "Rose Knights gain Accuracy 2 while attacking a flanked character.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "3 Knights",
+                    "id": "9f09-a795-3107-a149",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "deaf-e655-8f04-63fd", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "0a2c-1d17-cb6f-e3f0",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Rose Knight",
+                        "id": "90ba-910f-c879-93f1",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Teamwork (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points\n3 = 7 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Accuracy 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {"name": "Avenger", "id": "5c8c-b8fe-3c14-1ebd", "description": "When a friendly Hero or Rose character within 2 false Focus or Attack", "hidden": false},
+                      {"name": "Teamwork", "id": "7ce8-c754-0764-4717", "description": "Rose Knights gain Accuracy 2 while attacking a flanked character.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "2 Knights",
+                    "id": "6576-9d3f-a8c9-1e7f",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "61fa-90c3-decf-354b", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "4c5d-207d-fe3e-a270",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Rose Knight",
+                        "id": "92cd-6212-3075-6555",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Teamwork (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Accuracy 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {"name": "Avenger", "id": "bfa6-3e25-5b72-ba8a", "description": "When a friendly Hero or Rose character within 2 false Focus or Attack", "hidden": false},
+                      {"name": "Teamwork", "id": "7813-65db-5c65-6b81", "description": "Rose Knights gain Accuracy 2 while attacking a flanked character.", "hidden": false}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Rose Knights",
+                "id": "1525-2fd7-6944-ba87",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "0cb7-67bf-9bcf-3af5", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "73b9-4172-29e9-8c87",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "b1c2-2659-26ff-b76b",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "ab7c-f859-e773-92f0", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Knight",
+                    "id": "3552-d8f9-607b-47ed",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "2dd4-9eea-bbb8-b815", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "b369-e85a-6f7d-a3a8",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Rose Knight",
+                        "id": "826a-859c-1550-81ed",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Teamwork (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n3 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Accuracy 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {"name": "Avenger", "id": "d86e-56c7-d61f-ba91", "description": "When a friendly Hero or Rose character within 2 false Focus or Attack", "hidden": false},
+                      {"name": "Teamwork", "id": "07e1-c0a9-c224-150e", "description": "Rose Knights gain Accuracy 2 while attacking a flanked character.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "3 Knights",
+                    "id": "ef56-0192-fa0c-7568",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "6864-a36a-c31a-88e1", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "8fc2-bf19-79d1-d4c9",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Rose Knight",
+                        "id": "6639-064d-794c-5126",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Teamwork (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points\n3 = 7 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Accuracy 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {"name": "Avenger", "id": "ddfa-a53f-cbb0-6574", "description": "When a friendly Hero or Rose character within 2 false Focus or Attack", "hidden": false},
+                      {"name": "Teamwork", "id": "4e74-cd65-a4dd-7b46", "description": "Rose Knights gain Accuracy 2 while attacking a flanked character.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "2 Knights",
+                    "id": "6af6-cb0f-9f80-b03e",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "09c8-bc51-277c-1973", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "29cd-7825-2b57-4d8b",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Rose Knight",
+                        "id": "52db-76e6-c98c-0d53",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Avenger (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Teamwork (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Rose, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Accuracy 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {"name": "Avenger", "id": "1012-70a1-b3bc-c46b", "description": "When a friendly Hero or Rose character within 2 false Focus or Attack", "hidden": false},
+                      {"name": "Teamwork", "id": "b0a6-4da4-605c-0d83", "description": "Rose Knights gain Accuracy 2 while attacking a flanked character.", "hidden": false}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tiger Knight Archers",
+                "id": "a6ab-f6b9-43be-6a55",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "5467-dd84-cc4c-7607", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "4303-636a-f31e-c118",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "acff-eeb5-72cd-a8ca",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "0757-6d0a-0f01-5445", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Blood Scent",
+                    "id": "0706-bd10-75ac-e7cd",
+                    "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                    "hidden": false
+                  },
+                  {"name": "Eye of The Tiger", "id": "219b-7a03-b669-1a3a", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Archer",
+                    "id": "f97a-222b-1374-f036",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "1b84-ca11-f345-ae46", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "397c-e1f7-3bc3-6848",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Archer",
+                        "id": "fd5a-8f83-6288-b088",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Blood Scent (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Eye of the Tiger (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Human, Marksman, Knight", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n3 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Pierce 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Blood Scent",
+                        "id": "0eb5-58b3-cec8-2b3b",
+                        "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                        "hidden": false
+                      },
+                      {"name": "Eye of The Tiger", "id": "c8c6-a782-b4bc-c8a0", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "3 Archers",
+                    "id": "7e50-b2dc-c6a9-41a2",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "5f25-d545-a89d-6fee", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "f7c5-5e08-3db4-c4ce",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Archer",
+                        "id": "345a-b60a-bf97-15cc",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Blood Scent (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Eye of the Tiger (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Human, Marksman, Knight", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1= 3 Points\n2= 6 Points\n3= 8 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Pierce 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Blood Scent",
+                        "id": "ce67-0ce2-6b0f-2031",
+                        "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                        "hidden": false
+                      },
+                      {"name": "Eye of The Tiger", "id": "3196-4d1a-5245-a855", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                    ]
+                  },
+                  {
+                    "name": "2 Archers",
+                    "id": "7b85-9ec5-e0a2-f08f",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "33bb-2f3d-d110-c43a", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "1cac-59bf-cdae-dbc1",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Archer",
+                        "id": "ac57-e00b-4328-4d35",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1 Melee/ 4 Ranged", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Blood Scent (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "Eye of the Tiger (Constant)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Human, Marksman, Knight", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1= 3 Points\n2= 6 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "Pierce 1", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Blood Scent",
+                        "id": "32b3-2442-c428-268b",
+                        "description": "While attacking a Bloodied enemy or an enemy with Wound, Tiger archers gain Accuracy 3.",
+                        "hidden": false
+                      },
+                      {"name": "Eye of The Tiger", "id": "1a3d-afc1-a343-f2c8", "description": "Friendly characters don't obstruct Tiger Archer's ranged attacks.", "hidden": false}
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tiger Knight Halberdiers",
+                "id": "33f2-4aa7-b1b1-a587",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "categoryLinks": [{"name": "Troop", "id": "3b0c-a273-3d67-5eb5", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "6323-089a-3825-5f61",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "name": "Upgrades",
+                    "id": "e0c8-f0e2-6a83-8ef7",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "targetId": "ba3b-6f79-e920-db59",
+                    "type": "selectionEntryGroup",
+                    "categoryLinks": [{"name": "Upgrades", "id": "5e7f-73c1-46da-75a8", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}]
+                  }
+                ],
+                "rules": [
+                  {
+                    "name": "Opportunist",
+                    "id": "8f81-43f3-bf4d-ba9a",
+                    "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                    "hidden": false
+                  },
+                  {
+                    "name": "The Best Defence",
+                    "id": "02e7-5767-ad23-297e",
+                    "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                    "hidden": false
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "name": "1 Halberdier",
+                    "id": "90bf-7c79-aa2f-447c",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "39d2-2da2-d2e3-7a2c", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "cfa0-cfea-8f00-a5c8",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Halberdier",
+                        "id": "e79c-6631-dda6-3748",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Opportunist (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "The Best Defence (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n3 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "None", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Opportunist",
+                        "id": "d153-eb5f-7028-7111",
+                        "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "The Best Defence",
+                        "id": "3f76-4ed1-abea-70c9",
+                        "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "3 Halberdier",
+                    "id": "f708-2cd8-d7d8-4f7e",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "bdec-1de8-bb5f-09e6", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "fa0a-9bde-a064-43cb",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Halberdier",
+                        "id": "deb1-2979-f79d-26df",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Opportunist (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "The Best Defence (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points\n3 = 7 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "None", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Opportunist",
+                        "id": "30d5-781b-2eef-e25c",
+                        "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "The Best Defence",
+                        "id": "6b88-7976-eb24-6a8c",
+                        "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "name": "2 Halberdier",
+                    "id": "6d3a-1ecc-5c8d-015e",
+                    "collective": false,
+                    "hidden": false,
+                    "import": true,
+                    "type": "model",
+                    "categoryLinks": [{"name": "Troop", "id": "afdc-934e-981d-8e0a", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                    "constraints": [
+                      {
+                        "id": "ed73-fb68-1699-3d21",
+                        "field": "selections",
+                        "includeChildForces": false,
+                        "includeChildSelections": false,
+                        "percentValue": false,
+                        "scope": "parent",
+                        "shared": true,
+                        "type": "max",
+                        "value": 1
+                      }
+                    ],
+                    "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 5}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+                    "profiles": [
+                      {
+                        "name": "Tiger Knight Halberdier",
+                        "id": "9dcd-79c6-96f8-9f28",
+                        "hidden": false,
+                        "typeId": "67ed-66d0-e4ae-8ccc",
+                        "typeName": "Troop",
+                        "characteristics": [
+                          {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                          {"name": "Attack", "$text": "3", "typeId": "67da-6694-0f94-47c5"},
+                          {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                          {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                          {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                          {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                          {"name": "Skill 1", "$text": "Opportunist (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                          {"name": "Skill 2", "$text": "The Best Defence (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                          {"name": "Traits", "$text": "Guardian, Knight, Human", "typeId": "a185-ee4a-642e-37d2"},
+                          {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                          {"name": "VP Track", "$text": "Fallen:\n1 = 3 Points\n2 = 5 Points", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                          {"name": "Keywords", "$text": "None", "typeId": "c4f7-494f-7643-7638"},
+                          {"name": "Token Skills", "$text": "Focus, Guard", "typeId": "9cac-1866-e02e-1d1d"}
+                        ]
+                      }
+                    ],
+                    "rules": [
+                      {
+                        "name": "Opportunist",
+                        "id": "64fc-9c28-d874-a548",
+                        "description": "While attacking outside its activation, Tiger Knight gains Advantage. \n\nNote: This is essentially when you are commanded to activate when you are outside its activation turn.",
+                        "hidden": false
+                      },
+                      {
+                        "name": "The Best Defence",
+                        "id": "e1d2-33d8-c4f3-293b",
+                        "description": "When an enemy enters Tiger Knight's threat range, discard a Guard Token to Attack that enemy. \n\nNote: This is a great combo move to use with Opportunist as it will give you Advantage 1.",
+                        "hidden": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
