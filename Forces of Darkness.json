@@ -1,0 +1,2123 @@
+{
+  "catalogue": {
+    "name": "Forces of Darkness",
+    "id": "b05a-0bc7-f400-b047",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "9eae-0060-d2cb-2349",
+    "gameSystemRevision": 3,
+    "library": false,
+    "revision": 1,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "entryLinks": [
+      {
+        "name": "Troops",
+        "id": "cbf5-0855-6391-5686",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "ef5d-71b6-f264-6226",
+        "type": "selectionEntry"
+      },
+      {
+        "name": "Heroes",
+        "id": "91b0-cd2b-5b8f-3e1b",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "c8d7-bb67-79fb-da76",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Hero", "id": "d78f-e002-93e0-185d", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}]
+      },
+      {
+        "name": "Dark Divinites",
+        "id": "2aa3-6a60-ac8e-10b0",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "5780-8d48-fd92-4529",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Divinity", "id": "7b6e-ae10-a6b5-7beb", "hidden": false, "primary": false, "targetId": "6c59-7bcd-44f8-3c71"}]
+      },
+      {
+        "name": "Lords",
+        "id": "a857-3aa4-25ad-9fe9",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "targetId": "caf5-de40-d0f8-1572",
+        "type": "selectionEntry",
+        "categoryLinks": [{"name": "Lord", "id": "a049-04b4-b3e1-7563", "hidden": false, "primary": false, "targetId": "03b7-6aa9-a03b-8071"}]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Lords",
+        "id": "caf5-de40-d0f8-1572",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Lord", "id": "a434-c16f-d07a-db33", "hidden": false, "primary": true, "targetId": "03b7-6aa9-a03b-8071"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Wrath",
+            "id": "ca78-6f09-8c13-a007",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Lord", "id": "726c-31a0-9f4f-93f4", "hidden": false, "primary": false, "targetId": "03b7-6aa9-a03b-8071"}],
+            "constraints": [
+              {
+                "id": "9a05-73ea-b705-08c4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 12}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Keywords",
+                "id": "6db4-77a7-8e97-3987",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "b904-7b2a-a21a-643e",
+                "type": "selectionEntryGroup",
+                "categoryLinks": [{"name": "Keywords", "id": "62b9-d98d-38b5-f9b0", "hidden": false, "primary": false, "targetId": "e900-5d11-8941-29a8"}],
+                "constraints": [
+                  {
+                    "id": "87d1-8376-f38c-7ecd",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ]
+              },
+              {
+                "name": "Upgrades",
+                "id": "1182-c7d9-2966-2dcb",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup",
+                "categoryLinks": [{"name": "Upgrades", "id": "f82d-ca48-d9b1-ad7d", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}],
+                "constraints": [
+                  {
+                    "id": "3d7b-ee79-d6e9-0f41",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Wrath",
+                "id": "244b-45df-bea2-139e",
+                "hidden": false,
+                "typeId": "b0b7-02f8-2474-26f5",
+                "typeName": "Lord",
+                "characteristics": [
+                  {"name": "Health", "$text": "18", "typeId": "e6d2-e7ef-38c9-dd30"},
+                  {"name": "Attack", "$text": "4", "typeId": "914f-b956-277c-033e"},
+                  {"name": "Range", "$text": "2", "typeId": "0a3b-eed5-5248-6151"},
+                  {"name": "Defense", "$text": "4", "typeId": "8926-1576-44d8-b258"},
+                  {"name": "Armour", "$text": "2", "typeId": "0721-716e-2c6e-6ff5"},
+                  {"name": "Speed", "$text": "4", "typeId": "a34d-8e5f-d950-64f2"},
+                  {"name": "Skill 1", "$text": "Aura of Infinite Rage (Constant)", "typeId": "1b0e-4759-ab75-9856"},
+                  {"name": "Skill 2", "$text": "Inspire Fenzy {2} (Swift)", "typeId": "66d2-fc17-f518-ed0d"},
+                  {"name": "Skill 3", "$text": "Reslish the Slaughter (Reaction)", "typeId": "2e69-5be8-ce5e-d7a4"},
+                  {"name": "Traits", "$text": "Brute, Demon, Hunter, Leader, Sin", "typeId": "ff57-cc56-85da-15f8"},
+                  {"name": "Criticals", "$text": "Explode, Wound", "typeId": "4f32-eb95-3813-58b4"},
+                  {"name": "Token Skills", "$text": "Focus, Command", "typeId": "0b95-f7de-c5f1-7a10"},
+                  {"name": "Keywords", "$text": "Deadly 2. Flight, Huge, Pierce 1, Reach", "typeId": "d773-cf12-6468-01e2"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Aura of Infinite Rage ",
+                "id": "109d-0046-0ac7-3833",
+                "description": "Wrath and adjacent friendly characters get +1 Attack while bloodied.",
+                "hidden": false
+              },
+              {
+                "name": "Inspire Frenzy",
+                "id": "05ef-e332-f01b-8799",
+                "description": "A friendly character within 2 and sight takes 2 damage. Boost All that character.",
+                "hidden": false
+              },
+              {"name": "Relish The Slaughter", "id": "7a1c-52e7-4245-9791", "description": "When Wrath fells an enemy gain 3 VP and draw a Fate card.", "hidden": false}
+            ]
+          },
+          {
+            "name": "Gluttony",
+            "id": "1086-906b-9e66-24e6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Lord", "id": "19a6-f4c8-6c01-0c8d", "hidden": false, "primary": false, "targetId": "03b7-6aa9-a03b-8071"}],
+            "constraints": [
+              {
+                "id": "0398-0555-ac05-6e3b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 13}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "3030-51c1-924a-a7c5",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup",
+                "categoryLinks": [{"name": "Upgrades", "id": "57c6-abee-a57c-8cf3", "hidden": false, "primary": false, "targetId": "6173-1a99-a86b-6e28"}],
+                "constraints": [
+                  {
+                    "id": "1f77-b1f0-a082-c6e2",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ]
+              },
+              {
+                "name": "Keywords",
+                "id": "7ecf-934a-b71b-cfbf",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "b904-7b2a-a21a-643e",
+                "type": "selectionEntryGroup",
+                "categoryLinks": [{"name": "Keywords", "id": "94da-4835-6aac-d855", "hidden": false, "primary": false, "targetId": "e900-5d11-8941-29a8"}],
+                "constraints": [
+                  {
+                    "id": "994b-5bd7-d48b-a14f",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": -1
+                  }
+                ]
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Gluttony",
+                "id": "cd72-b15d-06aa-ecbc",
+                "hidden": false,
+                "typeId": "b0b7-02f8-2474-26f5",
+                "typeName": "Lord",
+                "characteristics": [
+                  {"name": "Health", "$text": "30", "typeId": "e6d2-e7ef-38c9-dd30"},
+                  {"name": "Attack", "$text": "6", "typeId": "914f-b956-277c-033e"},
+                  {"name": "Range", "$text": "2", "typeId": "0a3b-eed5-5248-6151"},
+                  {"name": "Defense", "$text": "4", "typeId": "8926-1576-44d8-b258"},
+                  {"name": "Armour", "$text": "0", "typeId": "0721-716e-2c6e-6ff5"},
+                  {"name": "Speed", "$text": "4", "typeId": "a34d-8e5f-d950-64f2"},
+                  {"name": "Skill 1", "$text": "Aura of Endless Hunger (Constant)", "typeId": "1b0e-4759-ab75-9856"},
+                  {"name": "Skill 2", "$text": "Greusome Feast {3} (Swift)", "typeId": "66d2-fc17-f518-ed0d"},
+                  {"name": "Skill 3", "$text": "Predator (Constant)", "typeId": "2e69-5be8-ce5e-d7a4"},
+                  {"name": "Traits", "$text": "Brute, Demon, Hunter, Beast, Sin", "typeId": "ff57-cc56-85da-15f8"},
+                  {"name": "Criticals", "$text": "Explode, Daze", "typeId": "4f32-eb95-3813-58b4"},
+                  {"name": "Token Skills", "$text": "Focus", "typeId": "0b95-f7de-c5f1-7a10"},
+                  {"name": "Keywords", "$text": "Huge, Reach", "typeId": "d773-cf12-6468-01e2"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Aura of Endless Hunger",
+                "id": "398f-75f8-f275-eb0d",
+                "description": "Nonimmune enemy characters adjacent to Gluttony cannot spend Move points",
+                "hidden": false
+              },
+              {
+                "name": "Gruesome Feast",
+                "id": "467f-9681-83e0-2f4a",
+                "description": "Attack 3, Deadly 2, Pierce 1. After this attack resolves Recover X (X= amount of damage the defender received +1)",
+                "hidden": false
+              },
+              {
+                "name": "Predator",
+                "id": "0ddd-8e83-1d9a-e2a2",
+                "description": "While attacking a Bloodied character, Gluttony may re-roll up to two attack dice.",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heroes",
+        "id": "c8d7-bb67-79fb-da76",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "9109-06f6-f8b4-3989", "hidden": false, "primary": true, "targetId": "92b2-75fa-5ad7-dc75"}],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Gouge",
+            "id": "33ca-ff64-6c92-1b38",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "59bd-8d8a-f6c4-218d", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "c74e-bbe9-2096-c2b8",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 10}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "82b9-39b7-b0ff-7232",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Gouge",
+                "id": "de5c-f675-1296-fa1c",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "14", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "2", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "3", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Cruel Cuts (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Infernal Hook {3} (Active Ability)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Lingering Agony (Constant)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Brute, Demon, Hunter", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode, Wound", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Deadly 2, Pierce 1, Reach, Limited Range", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Cruel Cuts",
+                "id": "ddd2-153d-5bcf-e143",
+                "description": "After Gouge's attack resolves if the defender received at least 1 damage. Break Any the defender",
+                "hidden": false
+              },
+              {
+                "name": "Infernal Hook",
+                "id": "ee2e-5a54-a0f8-1100",
+                "description": "Attack 4{4}. After this attack resolves if the defender received at least 1 damage, Pull 4 and Immobilise the defender. \n\nNote: This is a limited range attack and cannot exceed the 4 range.",
+                "hidden": false
+              },
+              {
+                "name": "Lingering Agony",
+                "id": "b1db-c605-76be-89e6",
+                "description": "Breaks cannot be removed from characters threatened by Gouge except by gaining a Boost.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Azrat",
+            "id": "5977-5583-1d12-9256",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "783b-fd81-5a90-356c", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "b4ca-9ee9-339b-4654",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 10}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "1934-53d5-bdb8-8636",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Azrat",
+                "id": "3b1a-ff4a-cfb4-bf10",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "11", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "5", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Incinerating Strike {2} (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Nova {2} (Active Ability)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Unbearable Heat (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Brute, Demon, Arcane", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Exlpode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Channel", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Huge, Accuracy 2, Flight", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "Nova", "id": "9a9c-6474-2708-9806", "description": "All characters within 4 (including Azrat) take 4 Dice of Direct Damage", "hidden": false},
+              {
+                "name": "Ubearable Heat",
+                "id": "1e09-62eb-312d-64c4",
+                "description": "Whenever a character you threaten melee attacks you that character takes 1 damage after the attack resolves.",
+                "hidden": false
+              },
+              {
+                "name": "Incinerating Stirke",
+                "id": "846c-0b28-87d4-0c80",
+                "description": "When Azrat declares an attack he gains Pierce X during this attack. (X=the defending characters armor value.) After this attack resolves, if the defender received at least one damage Wound the defender.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Lillith",
+            "id": "5618-f56d-54ae-7765",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "d905-3343-a828-68f7", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "05ee-9124-4d20-34ca",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 9}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "9e23-bdcd-772f-5814",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Lillith",
+                "id": "3ce4-4259-9795-e0cf",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "10", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "5", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "2", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Dominate {3} (Active Ability)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Enchanting Visage (Constant)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Sanguine Sorcery (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Arcane, Beast, Demon, Leader, Lillin", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode, Wound", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Command , Channel", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Pierce 1, Reach", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Dominate",
+                "id": "2b47-df7d-9db0-bf00",
+                "description": "Choose a character of equal or lower rank within 4 and sight. Take an action using that character as if it were part of your force. After that action resolves Daze that character. \n\nNote: Only applies to enemy characters",
+                "hidden": false
+              },
+              {
+                "name": "Enchanting Visage",
+                "id": "96a5-6d34-6fd5-1530",
+                "description": "Characters attacking lilith gain Disadvantage and cannot spend Focus tokens.",
+                "hidden": false
+              },
+              {"name": "Sanguine Sorcery", "id": "01a5-2669-f627-5a1d", "description": "Lilith takes 1 damage Channel.", "hidden": false}
+            ]
+          },
+          {
+            "name": "Moucrum",
+            "id": "d63a-4d68-4c65-739d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "3309-3fa5-48db-c205", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "1e92-7788-bb3a-12b9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 9}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "0058-1bb3-a707-0bc4",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Moucrum",
+                "id": "c99f-4f91-5865-95ca",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "10", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "5", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "2", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "4", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Grim Harvest {2} (Active Ability)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Lord of the Deathless (Swift)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Ossifycation {1}(Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Brute, Leader, Ossilyte, Undead", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode, wound", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Command", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Immune, Pierce 1, Reach", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Grim Harvest",
+                "id": "31df-22a8-26ae-87cd",
+                "description": "Attack a Bloodied character. Moucrum gains Advantage during this attack. After the attack resolves, Moucrum Recovers X (X=amount of damage dealt during this attack +1)",
+                "hidden": false
+              },
+              {"name": "Lord of the Deathless", "id": "8ed3-a27e-6394-f9e5", "description": "Command an undead, regardless of rank", "hidden": false},
+              {
+                "name": "Ossifycation",
+                "id": "f250-9813-2435-0f22",
+                "description": "After Moucrum fells an enemy, place an Ossilyte guard into a space the fallen character occupied. \n\nNote: Take the far left Fate value of that unit as the VP if defeated. (2)\n\nCan only use if there are available Ossilyte models to represent them.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Vahlrose",
+            "id": "bba2-3f7f-ad60-1a54",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "af72-146c-d971-2450", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "c8ac-c214-ab8c-d3a5",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "0129-aa79-92e6-8240",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Vahlrose",
+                "id": "a466-102d-9acf-0b07",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "8", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "3", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Death to Life {3} (Active Ability)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Drain Essence (Active Ability)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Queen of Bone {1} (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Arcane, Demon, Leader", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Command, Channel, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Evasive 2, Pierce 1", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "Death to LIfe", "id": "650c-0582-bf15-beda", "description": "Place an Ossilyte guard into an adjacent space.", "hidden": false},
+              {
+                "name": "Drain Essence",
+                "id": "cca9-1ad5-6d97-9563",
+                "description": "Choose an adjacent character. That character takes 3 dice of direct damage. For each damage dealt, Channel. \n\n(This can apply to allies)",
+                "hidden": false
+              },
+              {"name": "Queen of Bones", "id": "bcee-432d-caa8-03c0", "description": "An adjacent Ossilyte guard may perform any action.", "hidden": false}
+            ]
+          },
+          {
+            "name": "Ektalok",
+            "id": "ac62-8997-be34-a85f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "3d28-52a8-abe7-48eb", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "c237-24fb-ea32-f253",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "8c57-0f23-0812-08e0",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ektalok",
+                "id": "693d-aa40-c6da-d2ba",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "8", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Calm {1} (Swift)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Incite (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Mind Trick {2} (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Arcane, Demon, Rouge", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Channel, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Evasive 2, Flight", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "Calm", "id": "ca8f-4698-f303-0f8f", "description": "Break Attack a character within 3 and sight", "hidden": false},
+              {
+                "name": "Incite",
+                "id": "b427-d05e-25c6-7331",
+                "description": "At the end of your activation, choose an enemy character within 3 and sight. That character must activate during its controller's next activation place an objective token on that character.",
+                "hidden": false
+              },
+              {
+                "name": "Mind Trick",
+                "id": "1ccc-cb6c-fec3-3567",
+                "description": "Choose an enemy character within 3 and sight. Sidestep that character as though you controlled them. You may remove a boon from that character.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Maara",
+            "id": "719a-54cc-565f-55bf",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "704e-921d-f75c-43fb", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "44be-8b0f-bd23-3173",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "bbea-ffbe-fc15-ef53",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Maara",
+                "id": "9486-59a6-a831-900f",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "8", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Death's Call (Constant)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Grave Fear {2} (Active Ability)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "The Reaper Comes {2} (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Arcane, Undead", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Channel", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Evasive 2, Flight, Immune", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Death's Call",
+                "id": "730a-6c74-20c1-bbed",
+                "description": "Maara gains Disadvantage while attacking Bloodied characters. Bloodied characters gain Disadvantage while attacking Maara.",
+                "hidden": false
+              },
+              {"name": "Grave Fear", "id": "7a79-f7d5-fb58-2b77", "description": "Push 5 and Daze a bloodied or lower ranked character within 3 and sight.", "hidden": false},
+              {
+                "name": "The Reaper Comes",
+                "id": "47ca-a72a-7fb6-443c",
+                "description": "Place yourself into a space adjacent to a Bloodied character within 3 and sight. you may Daze that character.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Mrawl",
+            "id": "06b1-b1f8-8a23-34b2",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "fe8c-3d79-254f-bd53", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "91b6-464f-80e1-b87d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "067e-e202-331b-889f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Mrawl",
+                "id": "bc18-df12-f5cd-f03e",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "16", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "5", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Impervious (Constant)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Monstrous Strength (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Preferred Enemy (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Brute, Demon, Beast", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode, Daze", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Pierce 2", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "Impervious", "id": "db4b-6101-39b8-7acb", "description": "Mrawl can take no more than 3 damage during a single Attack.", "hidden": false},
+              {
+                "name": "Monstrous Strength",
+                "id": "58ee-0bc8-56f5-5609",
+                "description": "After Mrawls attack resolves Push X the defender (X= The amount of damage dealt.)",
+                "hidden": false
+              },
+              {
+                "name": "Preferred Enemy",
+                "id": "e102-0e05-c177-5353",
+                "description": "When Mrawl is attacking a character with objective token placed by Ektalok, Mrawl gains Advantage.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Akturis",
+            "id": "2dc0-4c9c-1d95-5d6d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "f593-7037-9f16-084c", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "63b5-aa08-ad85-7757",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "bece-c91b-5140-3fd7",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Akturis",
+                "id": "1fd9-928f-2668-79b8",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "7", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Forsaking Honor (Constant)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Incredible Luck {2} (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Unliving Glare {2} (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Ossi;lyte, Rouge, Undead", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Evade 1, Immune, Pierce 1", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Forsaking Honor",
+                "id": "186d-4fcd-7e49-03e8",
+                "description": "While attacking a character threatened by another friendly character, Akturis gains Advantage",
+                "hidden": false
+              },
+              {"name": "Unliving Glare", "id": "cc47-ad96-20d8-f37e", "description": "Daze and Immobilise a lower cost character within 3 and sight.", "hidden": false},
+              {
+                "name": "Incredible Luck",
+                "id": "4437-47f0-422f-a0a6",
+                "description": "After dice are rolled while Akturis is attacking or defending you may change one 0 to a 5 or a 5 to a 0. that die is considered to have been re-rolled.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "Triel",
+            "id": "c01f-2bbc-cc6c-f009",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "ee5c-9e83-519b-5fe9", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "609b-fe23-91b1-2dce",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "6600-2ce8-bd57-a77b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Triel",
+                "id": "5aa1-93da-6598-84b3",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "7", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "4", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "2", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Kiss of Fire {2} (Active Abiliy)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Silppery (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Swift Strike (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Arcane, Demon, Lillin, Rouge", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Channel, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Accuracy 2, Evasive 4, Reach", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "Kiss of Fire", "id": "74bd-5328-45ac-b11e", "description": "Attack 4{4}, Pierce 2 (Wound)", "hidden": false},
+              {
+                "name": "Slippery",
+                "id": "210a-1b9d-e62b-0dd8",
+                "description": "Tiriel can move though characters and does not provoke Attacks of opportunity.",
+                "hidden": false
+              },
+              {"name": "Swift Strike", "id": "e0fe-1c9b-b013-59ff", "description": "While attacking a ready character, Tiriel gains Advantage", "hidden": false}
+            ]
+          },
+          {
+            "name": "Aeteranius",
+            "id": "e299-2cc1-0ed3-13f0",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "a3f8-f1a4-2469-0147", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "constraints": [
+              {
+                "id": "1e2f-89dc-243e-bcf0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "af65-6cad-af30-3b93",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Aeteranius",
+                "id": "ee62-d837-32a8-960c",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "8", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "3", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "1", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "4", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Curse of Ageing (Active Ability)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Precognition (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Twist Fate {3} (Reaction)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Arcane, Demon", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Command, Channel", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "None", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Twist Fate",
+                "id": "1c60-1831-4e95-352e",
+                "description": "After dice are rolled during an attack involving a character within 3 and sight. Re-roll and number of those dice.",
+                "hidden": false
+              },
+              {
+                "name": "Curse of Ageing",
+                "id": "3328-5fb6-af56-698a",
+                "description": "Choose a character within 3 and sight. Break Any and Daze that character.",
+                "hidden": false
+              },
+              {
+                "name": "Precognition",
+                "id": "228a-c5e3-cc84-758f",
+                "description": "When Aeteranius activates your opponent reveals two cards from their fate hand to you. you may spend {2} to discard one of them.",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "name": "B'kta",
+            "id": "a870-ae87-58c6-ee08",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Hero", "id": "843a-6ad8-e37c-17bf", "hidden": false, "primary": false, "targetId": "92b2-75fa-5ad7-dc75"}],
+            "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "4a01-c0cf-3086-5ff4",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "B'kta",
+                "id": "d876-fdbf-5c87-733f",
+                "hidden": false,
+                "typeId": "3ae3-9405-766b-6417",
+                "typeName": "Hero",
+                "characteristics": [
+                  {"name": "Health", "$text": "4", "typeId": "a13c-10b7-2896-bb31"},
+                  {"name": "Attack", "$text": "2", "typeId": "6c2e-f536-b3a6-1fa9"},
+                  {"name": "Range", "$text": "1", "typeId": "49d0-0a04-6cbc-f286"},
+                  {"name": "Defense", "$text": "3", "typeId": "3a86-11ca-f002-eeb7"},
+                  {"name": "Armour", "$text": "0", "typeId": "462e-16c7-c53f-a16b"},
+                  {"name": "Speed", "$text": "5", "typeId": "028d-f362-815c-38f0"},
+                  {"name": "Skill 1", "$text": "Distracting (Reaction)", "typeId": "4b76-bce7-94ec-53ff"},
+                  {"name": "Skill 2", "$text": "Lead Astray {1} (Reaction)", "typeId": "403a-8e7a-a3b3-57db"},
+                  {"name": "Skill 3", "$text": "Skitterish (Swift)", "typeId": "cf14-caf6-b618-436c"},
+                  {"name": "Traits", "$text": "Demon, Rouge", "typeId": "4ccc-8757-1b3b-3c31"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "ef0e-8242-f583-664e"},
+                  {"name": "Token Skills", "$text": "Focus, Evade", "typeId": "80f8-014e-3c19-66d6"},
+                  {"name": "Keywords", "$text": "Evasive 4, Flight", "typeId": "c0b7-ff64-68c6-0bcc"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Distracting",
+                "id": "8b7a-3445-0a25-5a9f",
+                "description": "After B'kta's attack resolves remove a Boon or fate token from the defender.",
+                "hidden": false
+              },
+              {
+                "name": "Lead Astray",
+                "id": "0d2d-d7a1-1b5b-b735",
+                "description": "After an attack against B'kta resolves you may place him into an adjacent space. Them place the attacker into space B'kta occupied if able.",
+                "hidden": false
+              },
+              {"name": "Skitterish", "id": "7ef3-84c6-87ae-87e8", "description": "Sidestep", "hidden": false}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Troops",
+        "id": "ef5d-71b6-f264-6226",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "unit",
+        "categoryLinks": [{"name": "Troop", "id": "4046-56e0-5bf5-4de0", "hidden": false, "primary": true, "targetId": "9d34-3652-fcc5-0fa3"}],
+        "constraints": [
+          {
+            "id": "838e-45e3-08d8-a968",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+        "selectionEntries": [
+          {
+            "name": "Messor Gheist",
+            "id": "6e95-0558-a330-c31c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Troop", "id": "9719-1035-7f88-f265", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+            "constraints": [
+              {
+                "id": "d6ec-f8c2-03f9-707e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "2c91-a67b-1afd-625a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Messor Gheist",
+                "id": "dd24-11b8-4dd5-847f",
+                "hidden": false,
+                "typeId": "67ed-66d0-e4ae-8ccc",
+                "typeName": "Troop",
+                "characteristics": [
+                  {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                  {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                  {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                  {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                  {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                  {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                  {"name": "Skill 1", "$text": "Disorienting Blast {1} (Active Ability)", "typeId": "89e2-1316-b1f4-737b"},
+                  {"name": "Skill 2", "$text": "Envoy of Death", "typeId": "6008-87fa-4c1a-6cee"},
+                  {"name": "Traits", "$text": "Arcane, Demon, Undead", "typeId": "a185-ee4a-642e-37d2"},
+                  {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                  {"name": "VP Track", "$text": "Fallen: \n1 = 3\n2 = 6\n3 = 8", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                  {"name": "Keywords", "$text": "Flight", "typeId": "c4f7-494f-7643-7638"},
+                  {"name": "Token Skills", "$text": "Focus, Channel", "typeId": "9cac-1866-e02e-1d1d"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Envoy of Death",
+                "id": "2e08-7d6f-a424-358a",
+                "description": "Bloodied enemy characters get Accuracy -1 for each Messor Gheist with 2 (Max -3)",
+                "hidden": false
+              },
+              {
+                "name": "Disorientating Blast ",
+                "id": "5e5d-f003-5b9d-1709",
+                "description": "Attack 3{4}. Instead of dealing damage, for each damage Daze or break Any the Defender.",
+                "hidden": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "1 Gheist",
+                "id": "9eb8-cb26-92b2-f904",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "0920-f875-456d-048b", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "3eae-6e9b-f0e6-32da",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "2 Gheist ",
+                "id": "eb44-7a36-53cd-fac6",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "2f79-00e8-c04c-1c0f", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "8b17-268e-cc85-a502",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "3 Gheist",
+                "id": "69b8-02eb-fce5-8f53",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "6497-6b58-3dd4-5108", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "7a52-189c-18d8-6781",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              }
+            ]
+          },
+          {
+            "name": "Ossilyte Guard",
+            "id": "7e69-235c-02f4-6afd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Troop", "id": "dc02-b8e9-c280-3383", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+            "constraints": [
+              {
+                "id": "bef4-731b-fdbb-59fd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "5645-20fd-a7a3-dc04",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ossilyte Guard",
+                "id": "ca97-8b0b-a972-7a44",
+                "hidden": false,
+                "typeId": "67ed-66d0-e4ae-8ccc",
+                "typeName": "Troop",
+                "characteristics": [
+                  {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                  {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                  {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                  {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                  {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                  {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                  {"name": "Skill 1", "$text": "Eternal Vigil (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                  {"name": "Skill 2", "$text": "Broken Body (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                  {"name": "Traits", "$text": "Guardian, Knight, Ossilyte, Undead", "typeId": "a185-ee4a-642e-37d2"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                  {"name": "VP Track", "$text": "Fallen: \n1 = 2\n2 = 4\n3 = 6\n4 = 7\n5 = 8", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                  {"name": "Keywords", "$text": "Accuracy 1, Immune", "typeId": "c4f7-494f-7643-7638"},
+                  {"name": "Token Skills", "$text": "Focus, Guard, Shield", "typeId": "9cac-1866-e02e-1d1d"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "Eternal Vigil", "id": "104f-2700-9666-f1b7", "description": "At the end of the Ossilyte Guard's activation Guard", "hidden": false},
+              {
+                "name": "Broken Body",
+                "id": "c5d3-2523-ee55-63e6",
+                "description": "When Ossilyte guard is attacked by ranged weapon the attacking character gains Disadvantage.",
+                "hidden": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "1 Guard",
+                "id": "44e7-ea8e-fbf0-df3f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "6b4c-048f-f6b9-da5c", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "02a1-9975-90ef-3ae2",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 2}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "2 Guards",
+                "id": "3ad3-c89f-b105-38b9",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "2cbe-3939-318b-12f6", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "cfa6-5961-f8ee-dc71",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "3 Guards",
+                "id": "7f14-6499-f450-f94a",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "dc86-7780-059e-46e2", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "3b9d-8e37-8007-7018",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "4 Guards",
+                "id": "ddcb-0b12-94c1-6825",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "5fc3-33ec-29dd-a121", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "519e-5840-737e-2578",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "5 Guards",
+                "id": "25e1-a36c-d9a2-2d91",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "b5d5-5ea6-20af-cb75", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "269f-2da3-c37a-0b32",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              }
+            ]
+          },
+          {
+            "name": "Berserker of Blood",
+            "id": "0485-eeb4-f394-783e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Troop", "id": "1371-3bea-94d6-6f36", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+            "constraints": [
+              {
+                "id": "b5ca-70eb-b969-69a0",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "5616-db84-ab00-012b",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Berserker of Blood",
+                "id": "e25d-b9f4-53ef-ab04",
+                "hidden": false,
+                "typeId": "67ed-66d0-e4ae-8ccc",
+                "typeName": "Troop",
+                "characteristics": [
+                  {"name": "Health", "$text": "6", "typeId": "0aff-3d11-f241-82a0"},
+                  {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                  {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                  {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                  {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                  {"name": "Speed", "$text": "5", "typeId": "5fba-4ecc-4581-be8e"},
+                  {"name": "Skill 1", "$text": "Berserk Fury (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                  {"name": "Skill 2", "$text": "Blood Offering (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                  {"name": "Traits", "$text": "Brute, Demon, Hunter", "typeId": "a185-ee4a-642e-37d2"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                  {"name": "VP Track", "$text": "Fallen: \n1= 4\n2= 7\n3=10", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                  {"name": "Keywords", "$text": "Deadly 2", "typeId": "c4f7-494f-7643-7638"},
+                  {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Blood Offering",
+                "id": "ec48-923c-c01e-ee4d",
+                "description": "When Berserker of Blood fells an enemy Focus and shift one fate to your pool.",
+                "hidden": false
+              },
+              {"name": "Berserk Fury", "id": "9346-b3c8-0a39-290f", "description": "Berserker of Blood gains advantage while attacking and Bloodied.", "hidden": false}
+            ],
+            "selectionEntries": [
+              {
+                "name": "1 Berserker",
+                "id": "01c1-e72d-b240-1ceb",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Troop", "id": "b991-efe6-80eb-3b87", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "b3bf-36aa-90a5-0884",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "2 Berserkers",
+                "id": "1e65-1b08-2770-1e82",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "dc4d-2096-1f22-6188", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "6bcc-c496-14ff-ddb0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "3 Berserkers",
+                "id": "ea7f-16c5-3bc2-9719",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "e84a-b8e4-88ea-d872", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "f2ed-e788-b27a-89a1",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 10}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              }
+            ]
+          },
+          {
+            "name": "Berserker of Blood",
+            "id": "da4c-f770-318c-2aca",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Troop", "id": "a47d-dcdc-936f-3302", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+            "constraints": [
+              {
+                "id": "ea5c-217c-3943-c041",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "f3f8-be01-5e9b-1b7f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Berserker of Blood",
+                "id": "4cba-0e24-dde9-469a",
+                "hidden": false,
+                "typeId": "67ed-66d0-e4ae-8ccc",
+                "typeName": "Troop",
+                "characteristics": [
+                  {"name": "Health", "$text": "6", "typeId": "0aff-3d11-f241-82a0"},
+                  {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                  {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                  {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                  {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                  {"name": "Speed", "$text": "5", "typeId": "5fba-4ecc-4581-be8e"},
+                  {"name": "Skill 1", "$text": "Berserk Fury (Constant)", "typeId": "89e2-1316-b1f4-737b"},
+                  {"name": "Skill 2", "$text": "Blood Offering (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                  {"name": "Traits", "$text": "Brute, Demon, Hunter", "typeId": "a185-ee4a-642e-37d2"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                  {"name": "VP Track", "$text": "Fallen: \n1= 4\n2= 7\n3=10", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                  {"name": "Keywords", "$text": "Deadly 2", "typeId": "c4f7-494f-7643-7638"},
+                  {"name": "Token Skills", "$text": "Focus", "typeId": "9cac-1866-e02e-1d1d"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Blood Offering",
+                "id": "8f70-5bed-eb96-fe66",
+                "description": "When Berserker of Blood fells an enemy Focus and shift one fate to your pool.",
+                "hidden": false
+              },
+              {"name": "Berserk Fury", "id": "b753-f344-a38a-13d4", "description": "Berserker of Blood gains advantage while attacking and Bloodied.", "hidden": false}
+            ],
+            "selectionEntries": [
+              {
+                "name": "1 Berserker",
+                "id": "73a5-c2a6-81b4-4127",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "upgrade",
+                "categoryLinks": [{"name": "Troop", "id": "885f-3c90-022f-a6e5", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "9581-64af-f4f0-0f16",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "2 Berserkers",
+                "id": "befd-a86e-c22e-4eef",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "e815-030e-2ad3-d7f3", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "e03b-baa7-3038-baf1",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "3 Berserkers",
+                "id": "e98b-b2a8-beed-8c70",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "3beb-a32d-0d8e-2c2a", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "04cc-9102-fdce-02d0",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 10}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              }
+            ]
+          },
+          {
+            "name": "Messor Gheist",
+            "id": "4fd5-b826-7011-59c6",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Troop", "id": "0cb4-5532-886c-23b5", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+            "constraints": [
+              {
+                "id": "fed5-924c-0bc6-07ed",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "9afb-1ce3-7e54-1775",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Messor Gheist",
+                "id": "4a18-cde2-a2f1-6947",
+                "hidden": false,
+                "typeId": "67ed-66d0-e4ae-8ccc",
+                "typeName": "Troop",
+                "characteristics": [
+                  {"name": "Health", "$text": "4", "typeId": "0aff-3d11-f241-82a0"},
+                  {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                  {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                  {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                  {"name": "Armour", "$text": "0", "typeId": "11f5-dd18-2756-6e91"},
+                  {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                  {"name": "Skill 1", "$text": "Disorienting Blast {1} (Active Ability)", "typeId": "89e2-1316-b1f4-737b"},
+                  {"name": "Skill 2", "$text": "Envoy of Death", "typeId": "6008-87fa-4c1a-6cee"},
+                  {"name": "Traits", "$text": "Arcane, Demon, Undead", "typeId": "a185-ee4a-642e-37d2"},
+                  {"name": "Criticals", "$text": "Explode, Wound", "typeId": "9ef8-76bb-c4cc-3a78"},
+                  {"name": "VP Track", "$text": "Fallen: \n1 = 3\n2 = 6\n3 = 8", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                  {"name": "Keywords", "$text": "Flight", "typeId": "c4f7-494f-7643-7638"},
+                  {"name": "Token Skills", "$text": "Focus, Channel", "typeId": "9cac-1866-e02e-1d1d"}
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Envoy of Death",
+                "id": "fa5c-b9d8-78a5-955b",
+                "description": "Bloodied enemy characters get Accuracy -1 for each Messor Gheist with 2 (Max -3)",
+                "hidden": false
+              },
+              {
+                "name": "Disorientating Blast ",
+                "id": "5b82-bab9-993c-977b",
+                "description": "Attack 3{4}. Instead of dealing damage, for each damage Daze or break Any the Defender.",
+                "hidden": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "1 Gheist",
+                "id": "3b2a-f0b3-e439-6f3f",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "d02c-99d2-cc2c-74c6", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "4369-20f7-8d28-456c",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 3}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "2 Gheist ",
+                "id": "594f-6635-492e-71a5",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "4524-7325-1614-15bb", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "35d1-4ac0-d220-0749",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "3 Gheist",
+                "id": "e36b-491e-bab5-4cd0",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "e760-2ba6-7248-06ff", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "6c5c-10eb-0050-2a61",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              }
+            ]
+          },
+          {
+            "name": "Ossilyte Guard",
+            "id": "9fc3-8874-9aef-f000",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "model",
+            "categoryLinks": [{"name": "Troop", "id": "f4a2-e5f8-3f76-7b20", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+            "constraints": [
+              {
+                "id": "d32c-4bdb-1314-62fd",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}, {"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 0}],
+            "entryLinks": [
+              {
+                "name": "Upgrades",
+                "id": "b635-2f16-33f0-a231",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "targetId": "ba3b-6f79-e920-db59",
+                "type": "selectionEntryGroup"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ossilyte Guard",
+                "id": "59be-4d89-8b2d-9cf8",
+                "hidden": false,
+                "typeId": "67ed-66d0-e4ae-8ccc",
+                "typeName": "Troop",
+                "characteristics": [
+                  {"name": "Health", "$text": "3", "typeId": "0aff-3d11-f241-82a0"},
+                  {"name": "Attack", "$text": "2", "typeId": "67da-6694-0f94-47c5"},
+                  {"name": "Range", "$text": "1", "typeId": "b4f1-ad98-8eb1-e25d"},
+                  {"name": "Defense", "$text": "3", "typeId": "5dba-13c9-182c-c04c"},
+                  {"name": "Armour", "$text": "1", "typeId": "11f5-dd18-2756-6e91"},
+                  {"name": "Speed", "$text": "4", "typeId": "5fba-4ecc-4581-be8e"},
+                  {"name": "Skill 1", "$text": "Eternal Vigil (Reaction)", "typeId": "89e2-1316-b1f4-737b"},
+                  {"name": "Skill 2", "$text": "Broken Body (Reaction)", "typeId": "6008-87fa-4c1a-6cee"},
+                  {"name": "Traits", "$text": "Guardian, Knight, Ossilyte, Undead", "typeId": "a185-ee4a-642e-37d2"},
+                  {"name": "Criticals", "$text": "Explode", "typeId": "9ef8-76bb-c4cc-3a78"},
+                  {"name": "VP Track", "$text": "Fallen: \n1 = 2\n2 = 4\n3 = 6\n4 = 7\n5 = 8", "typeId": "a0b2-ad1b-7f1e-f32c"},
+                  {"name": "Keywords", "$text": "Accuracy 1, Immune", "typeId": "c4f7-494f-7643-7638"},
+                  {"name": "Token Skills", "$text": "Focus, Guard, Shield", "typeId": "9cac-1866-e02e-1d1d"}
+                ]
+              }
+            ],
+            "rules": [
+              {"name": "Eternal Vigil", "id": "2c55-1a15-1607-3204", "description": "At the end of the Ossilyte Guard's activation Guard", "hidden": false},
+              {
+                "name": "Broken Body",
+                "id": "1065-54b3-4fb8-97ef",
+                "description": "When Ossilyte guard is attacked by ranged weapon the attacking character gains Disadvantage.",
+                "hidden": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "name": "1 Guard",
+                "id": "cfcd-6d8a-93fe-4f66",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "bb24-b881-73ce-df25", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "21ff-16c6-28f0-0217",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 2}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "2 Guards",
+                "id": "ace6-2011-61c9-32ac",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "3248-b8b7-002d-da93", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "8583-7460-7021-7b45",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 4}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "3 Guards",
+                "id": "6d98-ece4-79e0-07df",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "c989-4942-63eb-5bb5", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "042f-fb39-24d2-3fd5",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 6}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "4 Guards",
+                "id": "eaa9-1fc6-6392-6c76",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "c4b8-719e-3b86-fba5", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "bab5-5684-41d5-6b52",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 7}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              },
+              {
+                "name": "5 Guards",
+                "id": "332d-2f06-b4f4-0175",
+                "collective": false,
+                "hidden": false,
+                "import": true,
+                "type": "model",
+                "categoryLinks": [{"name": "Troop", "id": "1112-cd71-edca-b8c6", "hidden": false, "primary": false, "targetId": "9d34-3652-fcc5-0fa3"}],
+                "constraints": [
+                  {
+                    "id": "af3f-fa9a-c975-4fc4",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "parent",
+                    "shared": true,
+                    "type": "max",
+                    "value": 1
+                  }
+                ],
+                "costs": [{"name": "Cost", "typeId": "c494-d0ff-a958-c070", "value": 8}, {"name": "Fate", "typeId": "7540-583a-760c-a57d", "value": 0}]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
